@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
-
 **On this page**, you will find the complete 12-week Internship Worklog of **Nguyen Phuoc Anh Dung** (Student ID: 2280600404, Class 22DTHC5 - Machine Learning & Applications).
 
 The weekly progress and summary are detailed as follows:

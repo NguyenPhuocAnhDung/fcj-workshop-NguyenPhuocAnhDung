@@ -6,10 +6,6 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 **Trong trang này** bạn sẽ theo dõi toàn bộ Nhật ký công việc (Worklog) trong suốt 12 tuần thực tập của **Nguyễn Phước Anh Dũng** (MSSV: 2280600404, Lớp 22DTHC5 - Chuyên ngành Máy học và ứng dụng).
 
 Nội dung chi tiết thực hiện theo từng tuần như sau:
