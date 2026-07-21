@@ -12,7 +12,7 @@ pre: " <b> 7. </b> "
 
 ### I. Đánh giá chi tiết trải nghiệm thực tập
 
-#### 🏢 1. Môi trường làm việc
+#### 1. Môi trường làm việc
 Môi trường làm việc vô cùng năng động, thân thiện và cởi mở. Không gian làm việc hiện đại, ngăn nắp giúp tôi dễ dàng tập trung cao độ. Các anh chị đồng nghiệp và thành viên trong FCAJ luôn sẵn sàng hỗ trợ nhiệt tình mỗi khi tôi gặp vướng mắc kỹ thuật, kể cả ngoài giờ làm việc.
 
 #### 2. Sự hỗ trợ từ Mentor và Admin
