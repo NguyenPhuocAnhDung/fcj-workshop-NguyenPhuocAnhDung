@@ -1,43 +1,53 @@
 ---
 title: "Sharing and Feedback"
-date: 2024-01-01
+date: 2026-07-21
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
-
-### Overall Evaluation
-
-**1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
-
-**2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
-
-**3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
-
-**4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
-
-**5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
-
-**6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+> Below are my personal reflections, practical experiences, and feedback regarding my internship journey in the **First Cloud AI Journey (FCAJ)** program. These insights reflect a genuine intern perspective aimed at helping improve the program for future cohorts.
 
 ---
 
-### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+### I. Detailed Internship Evaluation
+
+#### 🏢 1. Working Environment
+The working environment is exceptionally dynamic, friendly, and open. The modern and organized workspace allowed me to focus deeply on my tasks. Colleagues and team members at FCAJ were always ready to assist whenever I faced technical challenges, even outside working hours.
+
+#### 👨‍🏫 2. Support from Mentor and Admin Team
+The mentor provided close guidance, explaining complex concepts clearly and sharing practical industry experience. Rather than giving direct answers, the mentor guided me through problem-solving steps to identify root causes and fix issues independently. This greatly accelerated my technical mindset. The Admin team also provided prompt and helpful administrative support.
+
+#### 🎓 3. Relevance to Major & Academic Program
+The assigned tasks closely aligned with my university major in **Machine Learning & Applications / IT**. I was able to reinforce foundational knowledge (Networking, OS, Databases) while gaining hands-on exposure to modern AWS Cloud technologies such as EC2, S3, RDS, Serverless, AWS CDK, and AI tools.
+
+#### 🚀 4. Learning & Skill Development Opportunities
+The internship served as an outstanding platform to level up both technical and soft skills:
+- **Technical Skills**: Proficient in AWS Console/CLI operations, Infrastructure as Code (TypeScript CDK), Data Lake construction, automated CI/CD pipelines, and security optimization.
+- **Soft Skills**: Time management, practical troubleshooting mindset, effective teamwork, and professional technical communication.
+
+#### 🤝 5. Culture & Team Spirit
+The culture emphasizes mutual respect, equality, and shared goals. Everyone works with dedication while keeping the atmosphere welcoming. As an intern, I always felt my contributions were valued equally.
+
+#### 🎁 6. Policies & Intern Benefits
+The company offers a transparent allowance policy and flexible scheduling for university exams. Access to specialized AWS workshops and high-quality learning resources was a major highlight.
 
 ---
 
-### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+### II. Summary & Key Reflections
+
+- **Most Satisfying Aspect**:  
+  Having hands-on experience building real AWS cloud infrastructure rather than just studying theory. Dedicated mentorship boosted my confidence significantly.
+
+- **Suggestions for Improvement**:  
+  Maintain the current mentorship model while expanding regular Tech Talks or casual team-bonding sessions between different project teams.
+
+- **Would I Recommend This Internship?**:  
+  **100% Yes!** This is a highly valuable, practical, and rewarding program for any IT student interested in Cloud and AI.
+
+---
+
+### III. Future Suggestions & Aspirations
+
+- **Experience Enhancement**: Create a Knowledge Base repository documenting common AWS lab errors so future interns can troubleshoot quickly.
+- **Future Aspirations**: I hope to continue collaborating with the organization on upcoming Cloud & AI projects.

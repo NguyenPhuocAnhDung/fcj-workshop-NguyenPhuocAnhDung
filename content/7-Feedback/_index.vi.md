@@ -1,40 +1,53 @@
 ---
 title: "Chia sẻ, đóng góp ý kiến"
-date: 2024-01-01
+date: 2026-07-21
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
 
-### Đánh giá chung
+> Dưới đây là những chia sẻ, cảm nhận thực tế và đóng góp ý kiến cá nhân của tôi trong suốt hành trình thực tập tại chương trình **First Cloud AI Journey (FCAJ)**. Những đánh giá này phản ánh góc nhìn chân thực với mong muốn góp phần nâng cao chất lượng chương trình cho các khóa tiếp theo.
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+---
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+### I. Đánh giá chi tiết trải nghiệm thực tập
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+#### 🏢 1. Môi trường làm việc
+Môi trường làm việc vô cùng năng động, thân thiện và cởi mở. Không gian làm việc hiện đại, ngăn nắp giúp tôi dễ dàng tập trung cao độ. Các anh chị đồng nghiệp và thành viên trong FCAJ luôn sẵn sàng hỗ trợ nhiệt tình mỗi khi tôi gặp vướng mắc kỹ thuật, kể cả ngoài giờ làm việc.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+#### 👨‍🏫 2. Sự hỗ trợ từ Mentor và Admin
+Mentor đồng hành sát sao, giải thích vấn đề rất dễ hiểu và truyền đạt kinh nghiệm thực tế bài bản. Thay vì đưa ngay đáp án, Mentor luôn định hướng gợi mở để tôi tự suy luận, tìm nguyên nhân gốc rễ (root cause) và tự khắc phục sự cố. Nhờ đó, tôi tiến bộ rất nhanh về tư duy kỹ thuật. Đội ngũ Admin cũng hỗ trợ thủ tục vô cùng chu đáo và nhanh gọn.
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+#### 🎓 3. Sự phù hợp giữa công việc và chuyên ngành
+Nội dung công việc bám sát và bổ trợ trực tiếp cho chuyên ngành **Máy học và Ứng dụng / Công nghệ Thông tin** mà tôi đang học tại trường. Tôi vừa được củng cố các kiến thức nền tảng (Mạng máy tính, Hệ điều hành, Cơ sở dữ liệu), vừa được tiếp cận các công nghệ Đám mây AWS hiện đại như EC2, S3, RDS, Serverless, AWS CDK và các công cụ AI.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+#### 🚀 4. Cơ hội học hỏi & phát triển kỹ năng
+Kỳ thực tập là cơ hội tuyệt vời để tôi nâng cấp toàn diện:
+- **Kỹ năng chuyên môn**: Thành thạo thao tác trên console/CLI của AWS, viết mã hạ tầng CDK (TypeScript), xây dựng Data Lake, cấu hình CI/CD tự động và tối ưu bảo mật.
+- **Kỹ năng mềm**: Quản lý thời gian, tư duy giải quyết vấn đề thực tế, làm việc nhóm hiệu quả và giao tiếp kỹ thuật chuyên nghiệp.
 
+#### 🤝 5. Văn hóa & tinh thần đồng đội
+Văn hóa làm việc tôn trọng, bình đẳng và cùng hướng tới mục tiêu chung. Mọi người làm việc nghiêm túc nhưng không khí luôn thoải mái, vui vẻ. Dù là thực tập sinh, tôi vẫn luôn cảm thấy ý kiến của mình được tôn trọng như một thành viên chính thức.
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+#### 🎁 6. Chính sách & quyền lợi thực tập sinh
+Công ty có chính sách phụ cấp minh bạch, tạo điều kiện thời gian linh hoạt khi tôi có lịch thi tại trường. Ngoài ra, việc được tham gia các buổi workshop chuyên sâu của AWS và truy nguyên tài liệu chất lượng cao là một lợi thế rất lớn.
 
+---
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+### II. Tổng kết & Trả lời ý kiến
+
+- **Điều hài lòng nhất trong kỳ thực tập**:  
+  Được trực tiếp làm việc và triển khai hệ thống trên hạ tầng AWS thực tế chứ không chỉ học lý thuyết. Sự đồng hành tận tâm của Mentor giúp tôi thêm tự tin vào năng lực chuyên môn của mình.
+
+- **Đề xuất cải thiện cho các khóa sau**:  
+  Nên tiếp tục phát huy mô hình Mentorship hiện tại. Đồng thời có thể tổ chức thêm các buổi giao lưu teambuilding nhẹ hoặc chia sẻ chuyên đề (Tech Talk) định kỳ giữa các nhóm dự án khác nhau.
+
+- **Đánh giá về việc giới thiệu cho bạn bè**:  
+  **Chắc chắn 100%!** Đây là chương trình thực tập rất chất lượng, thực tế và giá trị cho bất kỳ sinh viên IT nào muốn theo đuổi mảng Cloud và AI.
+
+---
+
+### III. Đề xuất & Định hướng tương lai
+
+- **Đề xuất nâng cao trải nghiệm**: Xây dựng kho tài liệu tổng hợp các lỗi hay gặp (Knowledge Base) trong quá trình làm Lab AWS để thực tập sinh khóa sau có thể tự tra cứu nhanh chóng.
+- **Mong muốn tương lai**: Tôi rất mong muốn tiếp tục có cơ hội đồng hành và gắn bó lâu dài cùng công ty/tổ chức trong các dự án Cloud & AI tiếp theo.
