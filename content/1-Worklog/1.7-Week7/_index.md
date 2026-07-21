@@ -1,57 +1,35 @@
 ---
 title: "Week 7 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+{{%  notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{%  /notice %}}
 
 
 ### Week 7 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Build a Data Lake on AWS with S3, Glue and Athena.
+* Practice data processing with Glue ETL, DataBrew and Glue Studio.
+* Analyze and visualize data with Amazon QuickSight.
+* Work with DynamoDB and build Serverless Event-Driven architectures.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2   | - Build Data Lake on AWS:<br>&emsp; + Configure S3 as Data Lake Storage<br>&emsp; + Create AWS Glue Crawler to discover data schema<br>&emsp; + Query data using Amazon Athena | 16/06/2026   | 16/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Practice data processing and transformation:<br>&emsp; + Glue ETL Jobs for large-scale data processing<br>&emsp; + AWS Glue DataBrew for visual data cleaning<br>&emsp; + Glue Studio for visual pipeline building | 17/06/2026   | 17/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Analysis and visualization with QuickSight:<br>&emsp; + Connect QuickSight to Athena<br>&emsp; + Create Dashboard and analytical charts | 18/06/2026   | 18/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Work with Amazon DynamoDB:<br>&emsp; + CRUD operations, Global Secondary Index (GSI)<br>&emsp; + Configure DynamoDB Streams and Global Tables | 19/06/2026   | 19/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Build Serverless Event-Driven architecture:<br>&emsp; + Change Data Capture (CDC) with DynamoDB Streams<br>&emsp; + Integrate Kinesis and Lambda for event processing | 20/06/2026   | 22/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 7 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Built a complete Data Lake architecture on AWS with S3, Glue and Athena.
+* Successfully practiced ETL tools: Glue Job, DataBrew and Glue Studio.
+* Created interactive data analysis Dashboards with Amazon QuickSight.
+* Deployed Serverless Event-Driven architecture with DynamoDB Streams and Lambda.

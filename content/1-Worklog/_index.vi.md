@@ -10,31 +10,31 @@ pre: " <b> 1. </b> "
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
 {{% /notice %}}
 
-**Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
+**Trong trang này** bạn sẽ theo dõi toàn bộ Nhật ký công việc (Worklog) trong suốt 12 tuần thực tập của **Nguyễn Phước Anh Dũng** (MSSV: 2280600404, Lớp 22DTHC5 - Chuyên ngành Máy học và ứng dụng).
 
+Nội dung chi tiết thực hiện theo từng tuần như sau:
 
-Thông thường và cũng là tiêu chuẩn, một worklog được thực hiện trong khoảng 3 tháng (trong suốt thời gian thực tập) với nội dung các tuần như sau:
+**Tuần 1:** [Tạo tài khoản AWS Free Tier và làm quen với các dịch vụ cốt lõi (EC2, S3, EBS, VPC, RDS).](1.1-week1/)
 
-**Tuần 1:** [Làm quen với AWS và các dịch vụ cơ bản trong AWS](1.1-week1/)
+**Tuần 2:** [Quản lý truy cập với IAM, lưu trữ S3, CloudFront CDN và chiến lược Sao lưu dữ liệu.](1.2-week2/)
 
-**Tuần 2:** [Làm công việc A...](1.2-week2/)
+**Tuần 3:** [Dịch vụ hạ tầng nâng cao (Auto Scaling, EFS, FSx) và kiến trúc DNS Hybrid.](1.3-week3/)
 
-**Tuần 3:** [Làm công việc B...](1.3-week3/)
+**Tuần 4:** [Amazon FSx cho Windows, Bảo mật WAF và IAM Permission Boundary.](1.4-week4/)
 
-**Tuần 4:** [Làm công việc C...](1.4-week4/)
+**Tuần 5:** [Bảo mật nâng cao (Cognito, KMS, Security Hub), Assume Role và Tự động hóa Lambda.](1.5-week5/)
 
-**Tuần 5:** [Làm công việc D...](1.5-week5/)
+**Tuần 6:** [Cơ sở dữ liệu Đám mây (RDS, Aurora, Redshift), Chuyển đổi Lược đồ (SCT) và Di chuyển CSDL (DMS).](1.6-week6/)
 
-**Tuần 6:** [Làm công việc E...](1.6-week6/)
+**Tuần 7:** [Xây dựng Data Lake (S3, Glue, Athena, QuickSight) và CSDL NoSQL DynamoDB Event-Driven.](1.7-week7/)
 
-**Tuần 7:** [Làm công việc G...](1.7-week7/)
+**Tuần 8:** [Kiến trúc Serverless (Lambda, API Gateway), CI/CD với AWS SAM và Tự động hóa DevOps.](1.8-week8/)
 
-**Tuần 8:** [Làm công việc H...](1.8-week8/)
+**Tuần 9:** [Hạ tầng dưới dạng mã AWS CDK (TypeScript) và Nghiên cứu Kiến trúc Serverless.](1.9-week9/)
 
-**Tuần 9:** [Làm công việc I...](1.9-week9/)
+**Tuần 10:** [Cấu hình IAM Permission Boundary, Triển khai CDK IaC nâng cao và Di chuyển CSDL MySQL sang MariaDB.](1.10-week10/)
 
-**Tuần 10:** [Làm công việc L...](1.10-week10/)
+**Tuần 11:** [Kiến trúc Hướng sự kiện (SQS, SNS), Giám sát Observability (CloudWatch, AWS X-Ray) và Tracing.](1.11-week11/)
 
-**Tuần 11:** [Làm công việc M...](1.11-week11/)
+**Tuần 12:** [Tối ưu Vận hành, CloudFormation, Container ECS và Khung AWS Well-Architected Framework.](1.12-week12/)
 
-**Tuần 12:** [Làm công việc N...](1.12-week12/)

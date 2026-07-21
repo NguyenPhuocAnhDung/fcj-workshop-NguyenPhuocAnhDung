@@ -1,57 +1,34 @@
 ---
 title: "Week 5 Worklog"
 date: 2024-01-01
-weight: 1
+weight: 5
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+{{%  notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{%  /notice %}}
 
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Understand AWS security services: IAM, Cognito, KMS, Security Hub.
+* Practice IAM Policy, IAM Role, Permission Boundary and Resource Tags.
+* Learn data encryption with AWS KMS and security monitoring with Security Hub.
+* Automate EC2 Start/Stop using AWS Lambda for cost optimization.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2   | - Learn AWS security services:<br>&emsp; + Amazon Cognito (user authentication)<br>&emsp; + AWS KMS (encryption key management)<br>&emsp; + AWS Security Hub (centralized security monitoring) | 02/06/2026   | 02/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Practice advanced IAM:<br>&emsp; + Create and attach detailed IAM Policies<br>&emsp; + Configure IAM Role with Assume Role<br>&emsp; + Apply Permission Boundary & Resource Tags | 03/06/2026   | 03/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Practice data encryption with AWS KMS:<br>&emsp; + Create Customer Managed Key (CMK)<br>&emsp; + Encrypt S3 buckets and EBS volumes | 04/06/2026   | 04/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Practice Security Hub:<br>&emsp; + Enable and configure Security Hub<br>&emsp; + Monitor findings and set up alerts | 05/06/2026   | 05/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Automate EC2 Start/Stop with Lambda:<br>&emsp; + Write scheduled Lambda function (EventBridge trigger)<br>&emsp; + Test and optimize operational costs | 06/06/2026   | 08/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Mastered Cognito authentication, KMS encryption and Security Hub monitoring.
+* Successfully deployed advanced IAM with Permission Boundary and Resource Tags.
+* Built a Lambda function to automate EC2 Start/Stop for cost savings.

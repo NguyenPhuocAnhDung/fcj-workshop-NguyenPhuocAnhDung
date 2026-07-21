@@ -1,57 +1,34 @@
 ---
 title: "Week 11 Worklog"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+{{%  notice warning %}}
+⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{%  /notice %}}
 
 
 ### Week 11 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn event-driven architecture and messaging systems with Amazon SQS, SNS.
+* Research CloudWatch, AWS X-Ray and application monitoring tools.
+* Learn logging, metrics, alarms and distributed tracing.
+* Consolidate observability solutions for serverless systems.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | --- | --- | --- | --- |
+| 2   | - Learn Event-Driven architecture:<br>&emsp; + Amazon SQS (Simple Queue Service) - message queuing<br>&emsp; + Amazon SNS (Simple Notification Service) - notifications<br>&emsp; + Combine SQS + SNS + Lambda Fan-out pattern | 14/07/2026   | 14/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Practice Amazon SQS and SNS:<br>&emsp; + Create Standard Queue and FIFO Queue<br>&emsp; + Configure Dead Letter Queue (DLQ)<br>&emsp; + Create SNS Topic and Subscription | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Research application monitoring with CloudWatch:<br>&emsp; + CloudWatch Metrics, Logs and Alarms<br>&emsp; + Create Custom Metrics from applications<br>&emsp; + Configure CloudWatch Dashboard | 16/07/2026   | 16/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Practice AWS X-Ray (Distributed Tracing):<br>&emsp; + Enable X-Ray tracing for Lambda and API Gateway<br>&emsp; + Analyze Service Map and Trace details | 17/07/2026   | 17/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Consolidate Observability solutions for Serverless systems:<br>&emsp; + Combine CloudWatch + X-Ray + SNS Alerts<br>&emsp; + Design comprehensive monitoring strategy | 18/07/2026   | 20/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 11 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Mastered messaging architecture with SQS, SNS and common patterns (Fan-out, DLQ).
+* Set up comprehensive monitoring with CloudWatch Metrics, Logs, Alarms and Dashboard.
+* Practiced distributed tracing with AWS X-Ray for application performance analysis.

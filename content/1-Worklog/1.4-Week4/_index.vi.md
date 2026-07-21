@@ -1,59 +1,33 @@
 ---
 title: "Worklog Tuần 4"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
+{{%  notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+{{%  /notice %}}
 
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Nghiên cứu và thực hành Amazon FSx for Windows File Server.
+* Tìm hiểu và triển khai AWS Web Application Firewall (WAF).
+* Thực hành IAM Permission Boundary nhằm giới hạn quyền người dùng và tăng cường bảo mật hệ thống.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2   | - Nghiên cứu Amazon FSx for Windows File Server:<br>&emsp; + Kiến trúc và trường hợp sử dụng<br>&emsp; + Tích hợp với Active Directory | 26/05/2026   | 26/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Tìm hiểu AWS Web Application Firewall (WAF):<br>&emsp; + Cơ chế hoạt động và các quy tắc (Rules)<br>&emsp; + Bảo vệ ứng dụng web khỏi các tấn công phổ biến (OWASP Top 10) | 27/05/2026   | 27/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Thực hành triển khai AWS WAF:<br>&emsp; + Tạo WebACL và gắn vào Application Load Balancer<br>&emsp; + Cấu hình IP-based rules và Managed Rule Groups | 28/05/2026   | 28/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Thực hành IAM Permission Boundary:<br>&emsp; + Tạo và gắn Permission Boundary cho IAM User/Role<br>&emsp; + Kiểm thử giới hạn quyền thực tế | 29/05/2026   | 29/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tổng kết và ghi chép lại quy trình triển khai bảo mật | 30/05/2026   | 01/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm được kiến trúc và cách sử dụng Amazon FSx for Windows File Server.
+* Triển khai thành công AWS WAF để bảo vệ ứng dụng web.
+* Thực hành thành công IAM Permission Boundary giới hạn quyền truy cập người dùng.

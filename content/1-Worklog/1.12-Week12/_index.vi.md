@@ -1,58 +1,35 @@
 ---
 title: "Worklog Tuần 12"
 date: 2024-01-01
-weight: 2
+weight: 12
 chapter: false
-pre: " <b> 1.12 </b> "
+pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}}
+{{%  notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+{{%  /notice %}}
+
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Thực hành tối ưu vận hành trên AWS với Lambda, CloudWatch, Grafana và Systems Manager.
+* Tìm hiểu Infrastructure as Code bằng AWS CloudFormation.
+* Nghiên cứu AWS WAF, Amazon ECS và các giải pháp tối ưu chi phí trên AWS.
+* Tổng hợp các giải pháp theo AWS Well-Architected Framework.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2   | - Tối ưu vận hành Lambda và CloudWatch:<br>&emsp; + Phân tích và tối ưu Cold Start của Lambda<br>&emsp; + Thiết lập CloudWatch Alarms và Log Insights | 21/07/2026   | 21/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Thực hành Grafana trên AWS:<br>&emsp; + Tích hợp Amazon Managed Grafana với CloudWatch<br>&emsp; + Xây dựng Dashboard tùy chỉnh cho hệ thống | 22/07/2026   | 22/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Tìm hiểu AWS CloudFormation và Systems Manager:<br>&emsp; + Viết CloudFormation Template (YAML/JSON)<br>&emsp; + Dùng SSM Parameter Store và Run Command | 23/07/2026   | 23/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Nghiên cứu AWS WAF nâng cao và Amazon ECS:<br>&emsp; + Cấu hình WAF Managed Rules và Custom Rules<br>&emsp; + Triển khai Container trên Amazon ECS (Fargate) | 24/07/2026   | 24/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tổng hợp và đánh giá theo AWS Well-Architected Framework:<br>&emsp; + 6 Trụ cột: Operational Excellence, Security, Reliability, Performance, Cost, Sustainability<br>&emsp; + Lập báo cáo tổng kết chương trình thực tập | 25/07/2026   | 27/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Tối ưu thành công vận hành Lambda, CloudWatch và tích hợp Grafana Dashboard.
+* Nắm vững AWS CloudFormation và Systems Manager để quản lý hạ tầng as Code.
+* Hiểu và vận dụng được AWS Well-Architected Framework vào thiết kế giải pháp thực tế.
+* Hoàn thành chương trình thực tập với đầy đủ kinh nghiệm triển khai các dịch vụ AWS từ cơ bản đến nâng cao.

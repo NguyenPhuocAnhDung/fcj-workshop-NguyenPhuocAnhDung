@@ -1,59 +1,34 @@
 ---
 title: "Worklog Tuần 11"
 date: 2024-01-01
-weight: 2
+weight: 11
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
+{{%  notice warning %}}
 ⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+{{%  /notice %}}
 
 
 ### Mục tiêu tuần 11:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu kiến trúc hướng sự kiện và hệ thống messaging với Amazon SQS, SNS.
+* Nghiên cứu CloudWatch, AWS X-Ray và các công cụ giám sát ứng dụng.
+* Tìm hiểu logging, metrics, alarms và distributed tracing.
+* Tổng hợp giải pháp observability cho hệ thống serverless.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
+| --- | --- | --- | --- | --- |
+| 2   | - Tìm hiểu kiến trúc hướng sự kiện (Event-Driven):<br>&emsp; + Amazon SQS (Simple Queue Service) - hàng đợi tin nhắn<br>&emsp; + Amazon SNS (Simple Notification Service) - thông báo<br>&emsp; + Kết hợp SQS + SNS + Lambda Fan-out pattern | 14/07/2026   | 14/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Thực hành Amazon SQS và SNS:<br>&emsp; + Tạo Standard Queue và FIFO Queue<br>&emsp; + Cấu hình Dead Letter Queue (DLQ)<br>&emsp; + Tạo SNS Topic và Subscription | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Nghiên cứu giám sát ứng dụng với CloudWatch:<br>&emsp; + CloudWatch Metrics, Logs và Alarms<br>&emsp; + Tạo Custom Metrics từ ứng dụng<br>&emsp; + Cấu hình CloudWatch Dashboard | 16/07/2026   | 16/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Thực hành AWS X-Ray (Distributed Tracing):<br>&emsp; + Kích hoạt X-Ray tracing cho Lambda và API Gateway<br>&emsp; + Phân tích Service Map và Trace details | 17/07/2026   | 17/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Tổng hợp giải pháp Observability cho hệ thống Serverless:<br>&emsp; + Kết hợp CloudWatch + X-Ray + SNS Alerts<br>&emsp; + Thiết kế chiến lược giám sát toàn diện | 18/07/2026   | 20/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 11:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Nắm vững kiến trúc messaging với SQS, SNS và các pattern phổ biến (Fan-out, DLQ).
+* Thiết lập hệ thống giám sát toàn diện với CloudWatch Metrics, Logs, Alarms và Dashboard.
+* Thực hành distributed tracing với AWS X-Ray để phân tích hiệu năng ứng dụng.
