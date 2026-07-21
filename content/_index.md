@@ -24,7 +24,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 05/05/2026 to 27/07/2026
 
-![Nguyen Phuoc Anh Dung Avatar](/images/avatar.jpg)
+<img src="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/avatar.jpg" alt="Nguyen Phuoc Anh Dung Avatar" width="280" style="border-radius: 12px; margin: 15px 0; display: block;">
 
 ---
 

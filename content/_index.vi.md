@@ -24,7 +24,7 @@ chapter: false
 
 &emsp; **Thời gian thực tập:** Từ ngày 05/05/2026 đến ngày 27/07/2026
 
-![Ảnh đại diện Nguyễn Phước Anh Dũng](/images/avatar.jpg)
+<img src="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/avatar.jpg" alt="Ảnh đại diện Nguyễn Phước Anh Dũng" width="280" style="border-radius: 12px; margin: 15px 0; display: block;">
 
 ---
 
