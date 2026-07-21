@@ -6,14 +6,6 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “GenAI-powered App-DB Modernization Workshop”
-
-### Event Purpose
-
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and Event-Driven Architecture
-- Guide selection of optimal compute services
-- Introduce AI tools supporting the development lifecycle
 
 ### Date & Location
 
