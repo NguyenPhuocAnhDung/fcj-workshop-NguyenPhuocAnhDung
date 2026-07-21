@@ -24,7 +24,6 @@ pre: " <b> 4.1. </b> "
 ### 🎥 MINH CHỨNG THAM GIA SỰ KIỆN (06/06/2026)
 
 📌 **1. Tệp Video Minh Chứng (MP4)**:
-> *(Do giao diện GitHub xem trực tiếp file .md lọc bớt trình phát video HTML, bạn có thể click nút dưới đây để xem/xem trực tiếp video trên GitHub)*:
 
 🎬 **[▶️ BẤM VÀO ĐÂY ĐỂ XEM HOẶC TẢI VIDEO MINH CHỨNG EVENT 1 (MP4)](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_video.mp4)**  
 *(Tệp đính kèm phụ: [Tải bản video HD proof.mp4](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_proof.mp4))*
