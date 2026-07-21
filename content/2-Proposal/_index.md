@@ -1,111 +1,129 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-07-21
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+# TSL-SignMap — Smart Traffic Sign Map & AI Platform
+## Unified AWS Serverless & Microservices Solution for Smart Traffic Sign Management
 
 ### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+**TSL-SignMap** is a crowdsourced smart traffic sign management and mapping system integrated with Artificial Intelligence (AI Computer Vision - YOLO). The system empowers drivers and commuters to receive real-time traffic sign updates, location mapping, and safety alerts directly on mobile devices.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+The solution leverages **Microservices Architecture** combined with **AWS Cloud Infrastructure & Serverless** (Amazon EKS/ECS Fargate, AWS API Gateway, Amazon S3 Data Lake, AWS Lambda, Amazon SageMaker, Amazon RDS, ElastiCache Redis, Amazon Cognito) to ensure seamless scalability, real-time AI processing, and enterprise-grade security for tens of thousands of active users.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+---
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+### 2. Problem Statement & Solution
 
-### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+#### Problem Statement
+- **Outdated & Inaccurate Signage Data**: Urban traffic infrastructure changes rapidly (new signs, damaged signs, obscured signs), making manual municipal updates slow and costly.
+- **Traffic Safety Hazards**: Commuters lack real-time warnings regarding hazardous zones, speed limits, and restricted roads.
+- **Monolithic Scalability Bottlenecks**: Traditional mapping software struggles under sudden traffic spikes and heavy AI image processing workloads.
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
+#### The TSL-SignMap Solution
+- **Crowdsourcing & AI Detection**: Enables users to capture sign photos/videos via a Flutter Mobile App. The YOLO AI model automatically detects, classifies, and geocodes traffic signs onto an interactive map (OpenStreetMap / Mapbox).
+- **Community Verification (Voting Service)**: Community members participate in upvoting/downvoting submissions to verify accuracy before official map publishing.
+- **AWS Microservices Architecture**: Decouples business logic into independent services (TrafficSign, User, Voting, Payment, Notification, Feedback) routed through an API Gateway and containerized on AWS EKS/ECS Fargate.
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+#### ROI & Value Proposition
+- Delivers high-precision traffic data for AI research and smart transportation initiatives.
+- Serverless & Microservices infrastructure auto-scales dynamically, lowering operational costs by 40–60% compared to traditional on-premise servers.
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
+---
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+### 3. Architecture & Core AWS Services
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+The architecture follows an **Event-Driven Microservices** pattern hosted on AWS Cloud:
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+```
+[Mobile App (Flutter)] 
+       │ (HTTPS / SignalR)
+       ▼
+[AWS API Gateway / YARP Router]
+       │
+ ┌─────┼──────────────┬──────────────┬──────────────┬──────────────┐
+ ▼     ▼              ▼              ▼              ▼              ▼
+[User] [TrafficSign]  [Voting]       [Payment]      [Notification] [Feedback]
+(RDS)  (S3 / Lambda)  (RDS)          (RDS)          (SignalR Hub)  (RDS)
+       └──────┬───────┘
+              ▼
+   [Amazon SageMaker / YOLO] ──► [Amazon ElastiCache Redis]
+```
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+#### Core AWS Services Used:
+1. **Amazon EKS / ECS Fargate**: Manages containerized microservices (Docker) with automated horizontal scaling.
+2. **AWS API Gateway / ALB**: Handles request routing, SSL termination, and load balancing for incoming mobile traffic.
+3. **Amazon S3 (Simple Storage Service)**: Serves as Data Lake storage for raw sign images/videos, labeled datasets, and AI model weights.
+4. **AWS Lambda**: Serverless event handlers triggered upon image uploads to invoke AI inference asynchronously.
+5. **Amazon SageMaker**: Trains and hosts inference endpoints for the YOLO computer vision model.
+6. **Amazon RDS (PostgreSQL / SQL Server)**: Relational databases storing user accounts, contributions, votes, and payment records.
+7. **Amazon ElastiCache (Redis)**: Caches geospatial traffic sign queries, reducing API latency to < 50ms.
+8. **Amazon Cognito & AWS IAM**: Provides secure user authentication (JWT Tokens) and role-based access control.
+9. **AWS CloudWatch & X-Ray**: Enables centralized logging, performance metrics, and distributed tracing across microservices.
+10. **AWS CDK (TypeScript)**: Defines and provisions all AWS infrastructure as code (IaC).
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+---
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+### 4. Microservices Specification
 
-Total: $0.7/month, $8.40/12 months
+| Microservice | Port | Core Responsibilities | AWS & Database Integrations |
+| :--- | :--- | :--- | :--- |
+| **API Gateway** | `5000 / 7000` | Request routing, authentication middleware, rate limiting | AWS API Gateway / YARP |
+| **TrafficSignService** | `5003 / 7003` | Traffic sign CRUD, GPS geocoding, S3 uploads & AI YOLO invocation | Amazon S3, Lambda, SageMaker, RDS |
+| **UserService** | `5001 / 7001` | Account management, role authorization (User/Mod/Admin), Wallet/Coins | Amazon Cognito, RDS, ElastiCache |
+| **VotingService** | `5004 / 7004` | Community verification (Upvote/Downvote logic & weight calculation) | Amazon RDS PostgreSQL |
+| **PaymentService** | `5006 / 7006` | Handles coin top-ups, reward points, and transaction history | Amazon RDS |
+| **NotificationService**| `5005 / 7005` | Real-time push notifications via SignalR Hub when contributions are approved | AWS SNS, SignalR Hub |
+| **FeedbackService** | `5007 / 7007` | User feedback submission, issue reporting, and admin management | Amazon RDS |
+| **Mobile App (Flutter)**| App Client | Cross-platform mobile UI, OpenStreetMap/Mapbox navigation, AI camera capture | AWS Mobile SDK, Amplify |
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+---
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+### 5. Implementation Roadmap & Milestones
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+- **Phase 1: Architecture & AI Research (Month 1)**
+  - Requirements analysis, Microservices schema design, and dataset annotation.
+  - Train baseline YOLO model for traffic sign detection.
+- **Phase 2: Microservices & Mobile App Development (Month 2)**
+  - Develop .NET 8 Web API microservices and Flutter mobile client.
+  - Integrate S3, Lambda, SageMaker inference, and API Gateway.
+- **Phase 3: IaC Automation with AWS CDK & CI/CD (Month 3)**
+  - Write AWS CDK (TypeScript) scripts for automated cloud provisioning.
+  - Setup CI/CD pipelines (GitHub Actions / AWS CodePipeline) for container deployment to ECS Fargate.
+- **Phase 4: Load Testing, Optimization & Operations (Month 4)**
+  - Execute stress testing, optimize ElastiCache Redis, and perform Security Hub audit.
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+---
+
+### 6. Infrastructure Budget Estimation
+
+Estimated monthly cost based on **AWS Pricing Calculator** for 10,000 daily active users:
+
+- **Amazon ECS Fargate (2 Tasks)**: ~ $15.00 / month
+- **Amazon RDS PostgreSQL (db.t4g.micro)**: ~ $14.50 / month
+- **Amazon S3 (Data Lake 50GB + Transfers)**: ~ $2.50 / month
+- **AWS Lambda & API Gateway (500k requests)**: ~ $1.20 / month
+- **Amazon ElastiCache Redis (cache.t4g.micro)**: ~ $12.00 / month
+- **Amazon Cognito & CloudWatch**: ~ $2.00 / month
+- **Total Estimated Cost**: **~ $47.20 / month** (~ $566 / year)
+
+---
+
+### 7. Risk Evaluation & Mitigation Strategy
+
+- **Risk 1: High AI processing workload causing API lag**  
+  *Mitigation*: Use S3 Presigned URLs for direct mobile uploads, coupled with AWS Lambda async processing via SQS queues.
+- **Risk 2: Spam or inaccurate user submissions**  
+  *Mitigation*: Implement reputation-weighted voting algorithms in VotingService.
+- **Risk 3: Cloud budget overruns**  
+  *Mitigation*: Configure AWS Budgets alerts to trigger notifications at 80% threshold.
+
+---
 
 ### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+- Successfully deploy a real-time smart traffic sign mapping platform on AWS Cloud.
+- Achieve 100% Infrastructure as Code automation using AWS CDK and CI/CD pipelines.
+- Ensure high availability, low latency, and cost-optimized operations.
