@@ -130,8 +130,3 @@ Trình phát video trực tiếp (Hiển thị đầy đủ khi chạy trang web
   Trình duyệt của bạn không hỗ trợ phát trực tiếp video. Vui lòng bấm link phía trên để xem.
 </video>
 
-📌 **2. Hình ảnh minh chứng sự kiện**:
-
-![Hình ảnh minh chứng tham gia sự kiện 06/06/2026](/images/4-EventParticipated/event1_photo.jpg)
-
-> **Tổng kết:** Sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
