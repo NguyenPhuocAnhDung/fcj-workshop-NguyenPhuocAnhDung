@@ -1,14 +1,10 @@
 ---
 title: "Week 4 Worklog"
-date: 2024-01-01
+date: 2026-05-26
 weight: 4
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{%  notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{%  /notice %}}
-
 
 ### Week 4 Objectives:
 
@@ -19,11 +15,11 @@ pre: " <b> 1.4. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2   | - Research Amazon FSx for Windows File Server:<br>&emsp; + Architecture and use cases<br>&emsp; + Active Directory integration | 26/05/2026   | 26/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Learn AWS Web Application Firewall (WAF):<br>&emsp; + Operation mechanism and Rules<br>&emsp; + Protect web apps from OWASP Top 10 attacks | 27/05/2026   | 27/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Practice deploying AWS WAF:<br>&emsp; + Create WebACL and attach to Application Load Balancer<br>&emsp; + Configure IP-based rules and Managed Rule Groups | 28/05/2026   | 28/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Practice IAM Permission Boundary:<br>&emsp; + Create and attach Permission Boundary for IAM User/Role<br>&emsp; + Test actual permission restrictions | 29/05/2026   | 29/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Summarize and document the security deployment process | 30/05/2026   | 01/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Research Amazon FSx for Windows File Server:<br>&emsp; + Architecture and use cases<br>&emsp; + Active Directory integration | 26/05/2026   | 26/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Learn AWS Web Application Firewall (WAF):<br>&emsp; + Operation mechanism and Rules<br>&emsp; + Protect web apps from OWASP Top 10 attacks | 27/05/2026   | 27/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Practice deploying AWS WAF:<br>&emsp; + Create WebACL and attach to Application Load Balancer<br>&emsp; + Configure IP-based rules and Managed Rule Groups | 28/05/2026   | 28/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Practice IAM Permission Boundary:<br>&emsp; + Create and attach Permission Boundary for IAM User/Role<br>&emsp; + Test actual permission restrictions | 29/05/2026   | 29/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Summarize and document the security deployment process | 01/06/2026   | 01/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 4 Achievements:

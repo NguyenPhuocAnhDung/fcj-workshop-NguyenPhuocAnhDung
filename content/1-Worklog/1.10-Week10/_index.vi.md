@@ -1,14 +1,10 @@
 ---
 title: "Worklog Tuần 10"
-date: 2024-01-01
+date: 2026-07-07
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{%  notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{%  /notice %}}
-
 
 ### Mục tiêu tuần 10:
 
@@ -19,11 +15,11 @@ pre: " <b> 1.10. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2   | - Thực hành IAM Permission Boundary nâng cao:<br>&emsp; + Cấu hình Boundary cho Developer Group<br>&emsp; + Kiểm thử và xác nhận giới hạn quyền hoạt động đúng | 07/07/2026   | 07/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Triển khai hạ tầng bằng AWS CDK (TypeScript):<br>&emsp; + Mở rộng Stack với các Construct tùy chỉnh<br>&emsp; + Quản lý môi trường Dev/Prod bằng CDK Context | 08/07/2026   | 08/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Chuẩn bị môi trường di chuyển cơ sở dữ liệu:<br>&emsp; + Tạo RDS MySQL (Source) và RDS MariaDB (Target)<br>&emsp; + Cấu hình Security Group và Subnet Group | 09/07/2026   | 09/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Thực hiện Database Migration với AWS DMS:<br>&emsp; + Tạo Replication Instance<br>&emsp; + Cấu hình Source & Target Endpoints<br>&emsp; + Chạy Migration Task Full Load + CDC | 10/07/2026   | 10/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Kiểm tra tính toàn vẹn dữ liệu sau di chuyển và tổng kết | 11/07/2026   | 13/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Thực hành IAM Permission Boundary nâng cao:<br>&emsp; + Cấu hình Boundary cho Developer Group<br>&emsp; + Kiểm thử và xác nhận giới hạn quyền hoạt động đúng | 07/07/2026   | 07/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Triển khai hạ tầng bằng AWS CDK (TypeScript):<br>&emsp; + Mở rộng Stack với các Construct tùy chỉnh<br>&emsp; + Quản lý môi trường Dev/Prod bằng CDK Context | 08/07/2026   | 08/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Chuẩn bị môi trường di chuyển cơ sở dữ liệu:<br>&emsp; + Tạo RDS MySQL (Source) và RDS MariaDB (Target)<br>&emsp; + Cấu hình Security Group và Subnet Group | 09/07/2026   | 09/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Thực hiện Database Migration với AWS DMS:<br>&emsp; + Tạo Replication Instance<br>&emsp; + Cấu hình Source & Target Endpoints<br>&emsp; + Chạy Migration Task Full Load + CDC | 10/07/2026   | 10/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Kiểm tra tính toàn vẹn dữ liệu sau di chuyển và tổng kết | 13/07/2026   | 13/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 10:

@@ -1,14 +1,10 @@
 ---
 title: "Worklog Tuần 8"
-date: 2024-01-01
+date: 2026-06-23
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{%  notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{%  /notice %}}
-
 
 ### Mục tiêu tuần 8:
 
@@ -20,11 +16,11 @@ pre: " <b> 1.8. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 2   | - Tìm hiểu kiến trúc Serverless AWS:<br>&emsp; + AWS Lambda (Function as a Service)<br>&emsp; + Amazon API Gateway (REST/HTTP API)<br>&emsp; + Tích hợp Lambda + API Gateway + DynamoDB | 23/06/2026   | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 3   | - Xây dựng CI/CD Pipeline:<br>&emsp; + AWS SAM (Serverless Application Model)<br>&emsp; + AWS CodePipeline tự động hóa triển khai<br>&emsp; + CodeBuild để build và test tự động | 24/06/2026   | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Triển khai và kiểm thử Serverless API:<br>&emsp; + Deploy API lên API Gateway<br>&emsp; + Kiểm thử endpoint với Postman<br>&emsp; + Xử lý CORS và Authentication | 25/06/2026   | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Kết nối Frontend với Serverless Backend:<br>&emsp; + Tích hợp giao diện web gọi API<br>&emsp; + Xử lý Authentication với Cognito | 26/06/2026   | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Thực hành DevOps với CodeCommit, CodeBuild, CodeDeploy và CodePipeline:<br>&emsp; + Triển khai ứng dụng lên EC2 tự động<br>&emsp; + Thực hành Continuous Delivery | 27/06/2026   | 29/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Tìm hiểu kiến trúc Serverless AWS:<br>&emsp; + AWS Lambda (Function as a Service)<br>&emsp; + Amazon API Gateway (REST/HTTP API)<br>&emsp; + Tích hợp Lambda + API Gateway + DynamoDB | 23/06/2026   | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Xây dựng CI/CD Pipeline:<br>&emsp; + AWS SAM (Serverless Application Model)<br>&emsp; + AWS CodePipeline tự động hóa triển khai<br>&emsp; + CodeBuild để build và test tự động | 24/06/2026   | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Triển khai và kiểm thử Serverless API:<br>&emsp; + Deploy API lên API Gateway<br>&emsp; + Kiểm thử endpoint với Postman<br>&emsp; + Xử lý CORS và Authentication | 25/06/2026   | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - Kết nối Frontend với Serverless Backend:<br>&emsp; + Tích hợp giao diện web gọi API<br>&emsp; + Xử lý Authentication với Cognito | 26/06/2026   | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Thực hành DevOps với CodeCommit, CodeBuild, CodeDeploy và CodePipeline:<br>&emsp; + Triển khai ứng dụng lên EC2 tự động<br>&emsp; + Thực hành Continuous Delivery | 29/06/2026   | 29/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 8:
