@@ -98,7 +98,7 @@ Chuyển đổi thành hệ thống modular – từng chức năng là một **
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** vào ngày 06/06/2026 là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **“GenAI-powered App-DB Modernization”** vào ngày **06/06/2026** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
 - Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
@@ -113,14 +113,25 @@ Tham gia workshop **“GenAI-powered App-DB Modernization”** vào ngày 06/06/
 - Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
 - Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
 
-#### Minh chứng Video khi tham gia sự kiện
+---
 
-Dưới đây là video minh chứng ghi lại trải nghiệm tham gia sự kiện Event 1 vào ngày **06/06/2026**:
+### 🎥 MINH CHỨNG THAM GIA SỰ KIỆN (06/06/2026)
 
-<video controls width="100%" style="border-radius: 8px; margin-top: 15px; max-height: 480px;">
+📌 **1. Tệp Video Minh Chứng (MP4)**:
+> *(Do giao diện GitHub xem trực tiếp file .md lọc bớt trình phát video HTML, bạn có thể click nút dưới đây để xem/xem trực tiếp video trên GitHub)*:
+
+🎬 **[▶️ BẤM VÀO ĐÂY ĐỂ XEM HOẶC TẢI VIDEO MINH CHỨNG EVENT 1 (MP4)](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_video.mp4)**  
+*(Tệp đính kèm phụ: [Tải bản video HD proof.mp4](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_proof.mp4))*
+
+Trình phát video trực tiếp (Hiển thị đầy đủ khi chạy trang web Hugo):
+<video controls width="100%" style="border-radius: 8px; margin-top: 10px; max-height: 480px;">
   <source src="/images/4-EventParticipated/event1_video.mp4" type="video/mp4">
   <source src="/images/4-EventParticipated/event1_proof.mp4" type="video/mp4">
-  Trình duyệt của bạn không hỗ trợ xem video minh chứng.
+  Trình duyệt của bạn không hỗ trợ phát trực tiếp video. Vui lòng bấm link phía trên để xem.
 </video>
 
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+📌 **2. Hình ảnh minh chứng sự kiện**:
+
+![Hình ảnh minh chứng tham gia sự kiện 06/06/2026](/images/4-EventParticipated/event1_photo.jpg)
+
+> **Tổng kết:** Sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.

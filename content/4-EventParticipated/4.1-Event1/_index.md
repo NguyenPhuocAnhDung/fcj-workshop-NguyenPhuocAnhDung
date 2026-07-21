@@ -88,26 +88,24 @@ Transitioning into a modular system where each capability is an **independent se
 - **7Rs Framework**: Multiple paths tailored to application characteristics
 - **ROI Measurement**: Cost reduction + business agility
 
-### Work Application
+---
 
-- **Apply DDD** to project: Event storming sessions with the team
-- **Refactor Microservices**: Using bounded contexts to define service boundaries
-- **Implement Event-Driven Patterns**: Replace synchronous calls with async messaging
-- **Serverless Adoption**: Pilot AWS Lambda for suitable use cases
-- **Explore Amazon Q Developer**: Boost development workflow productivity
+### 🎥 EVENT EVIDENCE & VIDEO RECORDING (06/06/2026)
 
-### Event Experience & Video Proof
+📌 **1. Video Recording Evidence (MP4)**:
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop on June 6, 2026 was a rewarding experience.
+🎬 **[▶️ CLICK HERE TO WATCH / DOWNLOAD EVENT 1 VIDEO PROOF (MP4)](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_video.mp4)**  
+*(Alternative HD proof: [Download proof.mp4](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_proof.mp4))*
 
-#### Event Evidence Video
-
-Below is the video recording proof from attending Event 1 on **June 6, 2026**:
-
-<video controls width="100%" style="border-radius: 8px; margin-top: 15px; max-height: 480px;">
+HTML Video Player (Renders on Hugo website):
+<video controls width="100%" style="border-radius: 8px; margin-top: 10px; max-height: 480px;">
   <source src="/images/4-EventParticipated/event1_video.mp4" type="video/mp4">
   <source src="/images/4-EventParticipated/event1_proof.mp4" type="video/mp4">
   Your browser does not support HTML video playback.
 </video>
 
-> Overall, the event provided technical knowledge while shifting my mindset towards modern application design and effective team collaboration.
+📌 **2. Event Photo Evidence**:
+
+![Event 1 Attendance Photo 06/06/2026](/images/4-EventParticipated/event1_photo.jpg)
+
+> **Overall:** Attending this workshop provided technical knowledge while shifting my mindset towards modern application design and team collaboration.
