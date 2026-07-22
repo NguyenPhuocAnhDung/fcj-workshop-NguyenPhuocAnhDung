@@ -33,7 +33,7 @@ fallocate -l 1G testfile2.xyz
 5. Copy file vào S3 bucket mình tạo ở section 4.2
 ```
 aws s3 cp --endpoint-url https://bucket.<Regional-DNS-Name> testfile2.xyz s3://<your-bucket-name>
-```
+``` 
 + Câu lệnh này yêu cầu thông số --endpoint-url, bởi vì bạn cần sử dụng DNS name chỉ định cho endpoint để truy cập vào S3 thông qua Interface endpoint.
 + Không lấy ' * ' khi copy/paste tên DNS khu vực.
 + Cung cấp tên S3 bucket của bạn

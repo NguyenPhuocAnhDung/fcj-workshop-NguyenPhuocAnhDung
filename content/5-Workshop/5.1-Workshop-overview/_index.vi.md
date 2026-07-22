@@ -1,30 +1,146 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01
+title : "Tổng quan hệ thống TSL-SignMap và Hạ tầng AWS"
+date : 2026-07-22 
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về TSL-SignMap & Kiến trúc AWS
+#### 1. Tổng quan Hệ thống TSL-SignMap
 
-+ Hệ thống **TSL-SignMap** (Dự án FCJ-Workshop-TrungTuan1) là giải pháp quản lý & giám sát biển báo giao thông thời gian thực trên toàn quốc tích hợp cơ chế phần thưởng TSL Coin tự động khi người dùng đóng góp biển báo mới.
-+ Hệ thống được xây dựng theo kiến trúc **Microservices** hiện đại bao gồm 11 dịch vụ & thành phần kỹ thuật triển khai trên hạ tầng đám mây **AWS Cloud** (như Amazon S3, CloudFront CDN, Application Load Balancer, ECS Fargate, AWS Cloud Map, RDS for SQL Server, EventBridge và Secrets Manager).
+**TSL-SignMap** là hệ thống quản lý, đóng góp và tra cứu thông tin biển báo giao thông không gian GIS (chuẩn dữ liệu địa lý SRID 4326), được vận hành trên hạ tầng đám mây AWS với thiết kế **VPC 3-Tier Multi-AZ**, các máy chủ **AWS EC2 Instances**, tích hợp **AI SageMaker (YOLO)** và CSDL **RDS SQL Server 2022**.
 
-#### Tổng quan về workshop
+Hệ thống được phát triển nhằm giải quyết bài toán quản lý biển báo giao thông tập trung, cho phép người dùng tra cứu vị trí, gửi đóng góp biển báo mới, hỗ trợ nhận diện biển báo qua hình ảnh AI và đồng bộ tự động dữ liệu từ OpenStreetMap.
 
-Trong workshop này, bạn sẽ tìm hiểu và triển khai mô hình kiến trúc hạ tầng AWS hoàn chỉnh cho hệ thống **TSL-SignMap**:
-+ **"Frontend & CDN Layer"**: Giao diện React + Vite (`ADMIN.WEB`) được lưu trữ tại **Amazon S3** và phân phối qua **AWS CloudFront CDN** giúp nạp trang siêu tốc.
-+ **"API Gateway & Load Balancing"**: Traffic từ người dùng qua **Application Load Balancer (ALB)** điều hướng đến **Ocelot API Gateway Router** chạy trong **AWS ECS Fargate**.
-+ **"Microservices Cluster"**: 7 dịch vụ backend .NET Core và 1 tác vụ Python Data Scraper chạy trên cụm Serverless **AWS ECS Fargate**, giao tiếp nội bộ thông qua **AWS Cloud Map DNS**.
-+ **"Database Layer"**: Lưu trữ dữ liệu tập trung hơn 1,286+ biển báo giao thông chuẩn GIS `geography` trên **AWS RDS for SQL Server**.
+- **Đường dẫn ứng dụng Static Web (AWS S3 Hosting):** [http://tsl-signmap-production-static-web-ckroy7.s3-website-ap-southeast-1.amazonaws.com/](http://tsl-signmap-production-static-web-ckroy7.s3-website-ap-southeast-1.amazonaws.com/)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/kientrucAWS.jpg" alt="Sơ đồ Kiến trúc AWS TSL-SignMap" style="border-radius: 8px; width: 100%; max-width: 900px; display: block; margin: 15px auto;">
-</p>
+---
 
-**Tải tệp sơ đồ kiến trúc Draw.io:**  
-📥 <a href="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio" download="tsl-signmap.aws.drawio" target="_blank" style="font-weight: bold; color: #0066cc;">BẤM VÀO ĐÂY ĐỂ TẢI TỆP TSL-SIGNMAP.AWS (DRAW.IO DIAGRAM)</a>  
-*(Lưu ý: Bạn cũng có thể **nhấp chuột phải vào link phía trên -> chọn "Lưu liên kết thành..." (Save link as...)** để tải tệp `.drawio` về máy).*
+#### 2. Danh sách 9 Dịch Vụ AWS Chính Thức Trong Hạ Tầng
 
+| STT | Dịch Vụ AWS | Vai Trò & Chức Năng Chi Tiết | Thông Số & Cổng |
+| :--- | :--- | :--- | :--- |
+| 1 | **AWS CloudFront** | Mạng phân phối nội dung (CDN) toàn cầu cho ứng dụng React Admin Web (`ADMIN.WEB`), nạp trang `< 100ms`. | Port 443 (HTTPS) |
+| 2 | **AWS Simple Storage Service (S3)** | Lưu trữ các tệp tĩnh Frontend (`dist/`) và các tệp ảnh biển báo người dùng tải lên (`S3 Media Bucket`). | S3 Standard Bucket |
+| 3 | **AWS Application Load Balancer (ALB)** | Cân bằng tải và định tuyến kết nối HTTPS API (`/api/*`) từ ngoài Internet vào Ocelot API Gateway. | Public Subnet `10.0.1.0/24` |
+| 4 | **AWS Elastic Container Registry (ECR)** | Kho lưu trữ các Docker Container Images bảo mật cho 8 Microservices & Python Scraper. | Private Docker Registry |
+| 5 | **AWS Amazon EC2 (Elastic Compute Cloud)** | Máy chủ ảo EC2 chạy Docker Containers cho 8 Microservices (Ocelot API Gateway + 7 Services) & EC2 Scraper Instance. | Private App Subnet `10.0.2.0/24` |
+| 6 | **AWS Cloud Map** | Dịch vụ Service Discovery DNS nội bộ mạng VPC (`*.local`) giúp Ocelot API Gateway điều hướng đến 7 Microservices. | Internal DNS `*.local` |
+| 7 | **AWS Relational Database Service (RDS)** | Cơ sở dữ liệu SQL Server 2022 lưu trữ 1,286+ biển báo GIS geography SRID 4326, user và giao dịch. | Port 1433 (Private DB Subnet `10.0.3.0/24`) |
+| 8 | **AWS EventBridge** | Đặt lịch Cronjob (`0 2 * * ? *` - 2h sáng) tự động kích hoạt Python Scraper cào dữ liệu 15 tỉnh thành. | Cron Schedule |
+| 9 | **AWS Secrets Manager & ACM** | Quản lý mã hóa bí mật (Connection Strings/JWT Keys) và cấp chứng chỉ SSL HTTPS miễn phí cho ALB. | Encrypted Secrets / TLS |
 
+---
+
+#### 3. Cấu trúc Phân Mạng VPC Multi-AZ (VPC Architecture)
+
+- **Phạm vi hạ tầng:** AWS Region Singapore (`ap-southeast-1`) với dải mạng **AWS VPC (`10.0.0.0/16`)** triển khai trên 2 Availability Zones (**AZ - A** và **AZ - B**).
+- **Phân chia các phân vùng Subnet chi tiết theo sơ đồ:**
+  1. **Tầng Public Subnet (Public Subnet A & Public Subnet B):**
+     - Tiếp nhận lưu lượng từ **Internet Gateway (5)** vào **AWS Application Load Balancer (ALB) (6)** để cân bằng tải đến Target Group.
+     - Chứa các **NAT Gateway** tại từng AZ giúp các tài nguyên ở Private Subnet truy cập chiều ra ngoài Internet (như cào dữ liệu từ OpenStreetMap API).
+  2. **Tầng Private App Subnet (Private Subnet A & Private Subnet B):**
+     - Nằm trong cụm **Auto Scaling Group** tự động mở rộng linh hoạt spanning qua AZ-A và AZ-B.
+     - **Private Subnet A (AZ-A):** Chứa máy chủ `EC2 Ocelot API Gateway + 7 Microservices Containers` và `EC2 Scraper Instance (11)`.
+     - **Private Subnet B (AZ-B):** Chứa cụm máy chủ `EC2 Ocelot API Gateway + 7 Microservices Containers` dự phòng cao.
+     - **Tích hợp Điểm cuối Dịch vụ (VPC Endpoints):**
+       - Kết nối với **SageMaker (YOLO AI)** qua **SageMaker VPC Endpoint (9)**.
+       - Kết nối với **S3 Media Bucket** qua **S3 VPC Endpoint (10)**.
+       - Kết nối với bộ nhớ đệm **Amazon ElastiCache (Redis)**.
+  3. **Tầng Private DB Subnet (Private DB Sub A & Private DB Sub B):**
+     - **Private DB Sub A (AZ-A):** Chứa **RDS Primary - SQL** (SQL Server 2022) xử lý truy vấn dữ liệu từ EC2 Microservices và EC2 Scraper Instance.
+     - **Private DB Sub B (AZ-B):** Chứa **RDS Standby** đồng bộ dữ liệu liên tục (Multi-AZ synchronous replication) sẵn sàng tự động chuyển vùng khi có sự cố.
+  4. **Vùng Phục Hồi Thảm Họa (Secondary Disaster Recovery Region) (12):**
+     - Đồng bộ lưu trữ và sao lưu dữ liệu gồm `S3 Bucket`, `AWS Backup` và `RDS Backup`.
+
+---
+
+#### 4. Sơ Đồ Kiến Trúc Hệ Thống (System Architecture Diagram)
+
+![overview](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+
+```mermaid
+graph TB
+    subgraph AWSCloud["AWS Cloud"]
+        subgraph Region["AWS Region: Singapore (ap-southeast-1)"]
+            
+            subgraph EdgeLayer["Edge & Security Services"]
+                CF["AWS CloudFront<br/>(React Admin Web CDN)"]
+                S3Web["AWS S3 Bucket<br/>(Frontend dist/ Static Assets)"]
+                ACM["AWS Certificate Manager (ACM)<br/>(SSL/TLS HTTPS)"]
+                SECRETS["AWS Secrets Manager<br/>(Connection Strings & JWT Keys)"]
+                EB["AWS EventBridge<br/>(Cron: 0 2 * * ? *)"]
+            end
+
+            subgraph VPC["AWS VPC (10.0.0.0/16)"]
+                
+                subgraph PublicSubnet["Public Subnet (10.0.1.0/24)"]
+                    ALB["AWS Application Load Balancer (ALB)<br/>(HTTPS API Routing /api/*)"]
+                end
+
+                subgraph PrivateAppSubnet["Private App Subnet (10.0.2.0/24)"]
+                    subgraph EC2Cluster["AWS EC2 Instances"]
+                        GW["ApiGateway Container<br/>(Port 5008)"]
+                        
+                        US["UserService (5001)"]
+                        TS["TrafficSignService (5002)"]
+                        CS["ContributionService (5003)"]
+                        FS["FeedbackService (5004)"]
+                        PS["PaymentService (5005)"]
+                        RS["RewardService (5006)"]
+                        NS["NotificationService (5007)"]
+
+                        SCRAPER["EC2 Scraper Instance<br/>(scrape_signs.py)"]
+                    end
+                    
+                    CM["AWS Cloud Map<br/>(Service Discovery DNS *.local)"]
+                    SM["SageMaker Endpoint<br/>(YOLO AI Model)"]
+                end
+
+                subgraph PrivateDBSubnet["Private DB Subnet (10.0.3.0/24)"]
+                    RDS[("AWS RDS for SQL Server 2022<br/>(Port 1433 \| 1,286+ Signs GIS SRID 4326)")]
+                    CACHE["Amazon ElastiCache<br/>(Redis Cache)"]
+                end
+
+            end
+
+            S3Media["AWS S3 Media Bucket<br/>(Uploaded Sign Images)"]
+            ECR["AWS Elastic Container Registry (ECR)<br/>(Docker Container Images)"]
+        end
+    end
+
+    CLIENT_WEB["Client Admin Web"] -->|HTTPS| CF
+    CF -->|Fetch static site| S3Web
+    CLIENT_APP["Client Mobile / Web"] -->|HTTPS /api/*| ALB
+    ACM -.->|HTTPS Cert| ALB
+
+    ALB -->|Forward HTTPS| GW
+
+    CM -.->|DNS Routing *.local| GW
+    GW -->|Port 5001| US
+    GW -->|Port 5002| TS
+    GW -->|Port 5003| CS
+    GW -->|Port 5004| FS
+    GW -->|Port 5005| PS
+    GW -->|Port 5006| RS
+    GW -->|Port 5007| NS
+    GW -->|SageMaker VPCE| SM
+
+    US -->|Port 1433| RDS
+    TS -->|Port 1433| RDS
+    CS -->|Port 1433| RDS
+    FS -->|Port 1433| RDS
+    PS -->|Port 1433| RDS
+    RS -->|Port 1433| RDS
+    NS -->|Port 1433| RDS
+
+    CS -->|Upload Images| S3Media
+
+    EB -->|Trigger 2h sáng| SCRAPER
+    SCRAPER -->|Cập nhật CSDL| RDS
+    SCRAPER -->|Cache Data| CACHE
+
+    ECR -.->|Pull Images| EC2Cluster
+    SECRETS -.->|Inject Secrets| EC2Cluster
+    SECRETS -.->|Inject Secrets| RDS
+```

@@ -29,11 +29,11 @@ Mẫu CloudFormation sẽ tạo các dịch vụ bổ sung để hỗ trợ mô 
 
 Có thể mất vài phút để triển khai stack hoàn tất. Bạn có thể tiếp tục với bước tiếp theo mà không cần đợi quá trình triển khai kết thúc.
 
-#### Cập nhật bảng định tuyến private on-premise
+####  Cập nhật bảng định tuyến private on-premise 
 
 Workshop này sử dụng StrongSwan VPN chạy trên EC2 instance để mô phỏng khả năng kết nối giữa trung tâm dữ liệu truyền thống và môi trường cloud AWS. Hầu hết các thành phần bắt buộc đều được cung cấp trước khi bạn bắt đầu. Để hoàn tất cấu hình VPN, bạn sẽ sửa đổi bảng định tuyến "VPC on-prem" để hướng lưu lượng đến cloud đi qua StrongSwan VPN instance.
 
-1. Mở Amazon EC2 console
+1. Mở Amazon EC2 console 
 
 2. Chọn instance tên infra-vpngw-test. Từ Details tab, copy Instance ID và paste vào text editor của bạn để sử dụng ở những bước tiếp theo
 

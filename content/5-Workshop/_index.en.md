@@ -5,22 +5,32 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-# Deploying TSL-SignMap Microservices on AWS Cloud
 
-#### Overview of Project FCJ-Workshop-TrungTuan1
+#### Design and Deploy AWS Infrastructure for TSL-SignMap System
 
-This workshop provides a step-by-step guide to deploying **TSL-SignMap** - Vietnam Traffic Sign Management & Real-time Monitoring System using **Microservices architecture** on **AWS Cloud** infrastructure.
+#### Overview
 
-The system consists of **11 core services & technical components** running on official AWS Cloud services:
-+ **Frontend React Web (`ADMIN.WEB`)**: Deployed on **Amazon S3** and distributed via **AWS CloudFront CDN**.
-+ **API Gateway & 7 Microservices .NET Core + Python Scraper**: Packaged in Docker Containers running serverless on **AWS ECS Fargate**, routed via **Application Load Balancer (ALB)** and **AWS Cloud Map DNS**.
-+ **Database Layer**: **AWS RDS for SQL Server 2022** storing 1,286+ spatial `geography` traffic signs.
+**TSL-SignMap** is a spatial GIS traffic sign management, contribution, and lookup system (SRID 4326) operating on **AWS** cloud infrastructure built following the **AWS Well-Architected Framework**. The system is designed for High Availability, Scalability, and Multi-layer Security.
 
-#### Lab Modules
+In this workshop, you will learn how to design, configure, and optimize a comprehensive AWS infrastructure for TSL-SignMap featuring key architecture layers:
 
-1. [Introduction & TSL-SignMap Architecture](5.1-Workshop-overview/)
-2. [Prerequisites & IAM Permissions](5.2-Prerequiste/)
-3. [Deploying Frontend Web App on S3 & CloudFront CDN](5.3-S3-vpc/)
-4. [Deploying Microservices Cluster on ECS Fargate & RDS](5.4-S3-onprem/)
-5. [Security Configuration, Secrets Manager & IAM Policies](5.5-Policy/)
-6. [Cleaning up AWS Resources](5.6-Cleanup/)
++ **Global Edge & Security Layer:** Utilizing **Amazon Route 53**, **AWS CloudFront (CDN)** paired with **AWS WAF** and **AWS Certificate Manager (ACM)** to accelerate React Admin Web distribution, defend against web threats, and manage SSL/TLS certificates.
++ **3-Tier Multi-AZ VPC Architecture:** Deploying an AWS VPC across 2 Availability Zones (AZ-A & AZ-B) with 3 subnet tiers:
+  - **Public Subnet:** Hosts the **Application Load Balancer (ALB)** handling HTTPS traffic and **NAT Gateways** for outbound internet connectivity.
+  - **Private App Subnet:** Hosts an **Auto Scaling Group** running **Ocelot API Gateway**, **7 Microservices Containers**, and a **SageMaker AI Endpoint** integrated with YOLO AI for sign detection.
+  - **Private DB Subnet:** Hosts **AWS RDS for SQL Server 2022** in Primary - Standby (Multi-AZ replication) setup and **Amazon ElastiCache (Redis)**.
++ **Private Connectivity & Integrations (VPC Endpoints & Storage):**
+  - **S3 VPC Endpoint (Gateway/Interface):** Grants microservices secure, private access to **S3 Media Bucket** (storing traffic sign images) without traversing the public internet.
+  - **SageMaker VPC Endpoint:** Enables API Gateway to invoke SageMaker AI models privately within the VPC.
+  - **EC2 Scraper Instance:** Automatically scrapes traffic sign data from OpenStreetMap API and updates RDS SQL Server.
++ **Backup & Disaster Recovery:** Syncs critical data to a **Secondary Disaster Recovery Region** via AWS Backup, RDS Backup, and S3 Cross-Region Replication.
++ **Governance & Monitoring:** Integrates **AWS Secrets Manager**, **AWS IAM**, **Amazon ECR**, and **Amazon CloudWatch** for centralized infrastructure monitoring and management.
+
+#### Content
+
+1. [TSL-SignMap System Overview and AWS Infrastructure](5.1-Workshop-overview/)
+2. [Prerequisites and 3-Tier VPC Subnet Setup](5.2-Prerequiste/)
+3. [Setup Microservices Cluster and RDS Database](5.3-S3-vpc/)
+4. [Configure AWS CloudFront and S3 Static Web](5.4-S3-onprem/)
+5. [Configure VPC Endpoints (S3 & SageMaker) and Policies](5.5-Policy/)
+6. [Clean up resources](5.6-Cleanup/)

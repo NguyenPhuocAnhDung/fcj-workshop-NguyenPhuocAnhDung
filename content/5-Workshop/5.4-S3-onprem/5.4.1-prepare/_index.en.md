@@ -7,8 +7,8 @@ pre : " <b> 5.4.1 </b> "
 ---
 
 To prepare for this part of the workshop you will need to:
-+ Deploying a CloudFormation stack
-+ Modifying a VPC route table.
++ Deploying a CloudFormation stack 
++ Modifying a VPC route table. 
 
 These components work together to simulate on-premises DNS forwarding and name resolution.
 
@@ -33,7 +33,7 @@ It may take a few minutes for stack deployment to complete. You can continue wit
 
 This workshop uses a strongSwan VPN running on an EC2 instance to simulate connectivty between an on-premises datacenter and the AWS cloud. Most of the required components are provisioned before your start. To finalize the VPN configuration, you will modify the "VPC On-prem" routing table to direct traffic destined for the cloud to the strongSwan VPN instance.
 
-1. Open the Amazon EC2 console
+1. Open the Amazon EC2 console 
 
 2. Select the instance named infra-vpngw-test. From the Details tab, copy the Instance ID and paste this into your text editor
 
