@@ -36,14 +36,14 @@ Công ty có chính sách phụ cấp minh bạch, tạo điều kiện thời g
 
 ### II. Tổng kết & Trả lời ý kiến
 
-- **Điều hài lòng nhất trong kỳ thực tập**:  
-  Được trực tiếp làm việc và triển khai hệ thống trên hạ tầng AWS thực tế chứ không chỉ học lý thuyết. Sự đồng hành tận tâm của Mentor giúp tôi thêm tự tin vào năng lực chuyên môn của mình.
+- **Điều hài lòng nhất trong kỳ thực tập**:
+ Được trực tiếp làm việc và triển khai hệ thống trên hạ tầng AWS thực tế chứ không chỉ học lý thuyết. Sự đồng hành tận tâm của Mentor giúp tôi thêm tự tin vào năng lực chuyên môn của mình.
 
-- **Đề xuất cải thiện cho các khóa sau**:  
-  Nên tiếp tục phát huy mô hình Mentorship hiện tại. Đồng thời có thể tổ chức thêm các buổi giao lưu teambuilding nhẹ hoặc chia sẻ chuyên đề (Tech Talk) định kỳ giữa các nhóm dự án khác nhau.
+- **Đề xuất cải thiện cho các khóa sau**:
+ Nên tiếp tục phát huy mô hình Mentorship hiện tại. Đồng thời có thể tổ chức thêm các buổi giao lưu teambuilding nhẹ hoặc chia sẻ chuyên đề (Tech Talk) định kỳ giữa các nhóm dự án khác nhau.
 
-- **Đánh giá về việc giới thiệu cho bạn bè**:  
-  **Chắc chắn 100%!** Đây là chương trình thực tập rất chất lượng, thực tế và giá trị cho bất kỳ sinh viên IT nào muốn theo đuổi mảng Cloud và AI.
+- **Đánh giá về việc giới thiệu cho bạn bè**:
+ **Chắc chắn 100%!** Đây là chương trình thực tập rất chất lượng, thực tế và giá trị cho bất kỳ sinh viên IT nào muốn theo đuổi mảng Cloud và AI.
 
 ---
 

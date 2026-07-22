@@ -13,18 +13,18 @@ pre: " <b> 4.1. </b> "
 - **Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
 - **Role:** Participant
 
-### 🎥 EVENT EVIDENCE & VIDEO RECORDING (06/06/2026)
+### EVENT EVIDENCE & VIDEO RECORDING (06/06/2026)
 
-📌 **1. Video Recording Evidence (MP4)**:
+ **1. Video Recording Evidence (MP4)**:
 
-🎬 **[▶️ CLICK HERE TO WATCH / DOWNLOAD EVENT 1 VIDEO PROOF (MP4)](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_video.mp4)**  
+ **[ CLICK HERE TO WATCH / DOWNLOAD EVENT 1 VIDEO PROOF (MP4)](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_video.mp4)**
 *(Alternative HD proof: [Download proof.mp4](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/4-EventParticipated/event1_proof.mp4))*
 
 HTML Video Player (Renders on Hugo website):
 <video controls width="100%" style="border-radius: 8px; margin-top: 10px; max-height: 480px;">
-  <source src="/images/4-EventParticipated/event1_video.mp4" type="video/mp4">
-  <source src="/images/4-EventParticipated/event1_proof.mp4" type="video/mp4">
-  Your browser does not support HTML video playback.
+ <source src="/images/4-EventParticipated/event1_video.mp4" type="video/mp4">
+ <source src="/images/4-EventParticipated/event1_proof.mp4" type="video/mp4">
+ Your browser does not support HTML video playback.
 </video>
 
 

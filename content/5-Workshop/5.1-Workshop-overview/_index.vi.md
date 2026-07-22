@@ -1,6 +1,6 @@
 ---
 title : "Giới thiệu"
-date : 2024-01-01 
+date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
@@ -9,7 +9,7 @@ pre : " <b> 5.1. </b> "
 #### Giới thiệu về VPC Endpoint
 
 + Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
++ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
 
 #### Tổng quan về workshop
 Trong workshop này, bạn sẽ sử dụng hai VPC.

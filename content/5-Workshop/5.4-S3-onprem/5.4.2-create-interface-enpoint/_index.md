@@ -12,11 +12,11 @@ In this section you will create and test an S3 interface endpoint using the simu
 
 2. In Create endpoint console:
 + Name the interface endpoint
-+ In Service category, choose **aws services** 
++ In Service category, choose **aws services**
 
 ![name](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint1.png)
 
-3.  In the Search box, type S3 and press Enter. Select the endpoint named com.amazonaws.us-east-1.s3. Ensure that the Type column indicates Interface.
+3. In the Search box, type S3 and press Enter. Select the endpoint named com.amazonaws.us-east-1.s3. Ensure that the Type column indicates Interface.
 
 ![service](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint2.png)
 

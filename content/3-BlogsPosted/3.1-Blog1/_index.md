@@ -26,18 +26,18 @@ In large-scale Kubernetes clusters running hundreds of Pods, creating a dedicate
 
 ### CORE TECHNICAL HIGHLIGHTS
 
-1. **Intersection of Permissions Mechanism**  
-   Effective Pod Permissions = **Intersection** between the IAM Role Policy and the inline Session Policy.  
-   👉 *Important Note*: A Session Policy can only **narrow** permissions—it can never grant permissions beyond the base IAM Role.
+1. **Intersection of Permissions Mechanism**
+ Effective Pod Permissions = **Intersection** between the IAM Role Policy and the inline Session Policy.
+ *Important Note*: A Session Policy can only **narrow** permissions—it can never grant permissions beyond the base IAM Role.
 
-2. **Preventing Over-Permissioning**  
-   Example: Multiple microservices share a single S3 access IAM Role, but with Session Policies, Pod A can only read from `s3://bucket-a`, while Pod B can only write to `s3://bucket-b`.
+2. **Preventing Over-Permissioning**
+ Example: Multiple microservices share a single S3 access IAM Role, but with Session Policies, Pod A can only read from `s3://bucket-a`, while Pod B can only write to `s3://bucket-b`.
 
-3. **Cross-Account Support**  
-   Enables seamless cross-account permission management via IAM Role Chaining mechanisms.
+3. **Cross-Account Support**
+ Enables seamless cross-account permission management via IAM Role Chaining mechanisms.
 
-4. **Reduced Administrative Overhead**  
-   Helps DevOps teams reduce up to 70% of IAM Roles required for large-scale EKS clusters.
+4. **Reduced Administrative Overhead**
+ Helps DevOps teams reduce up to 70% of IAM Roles required for large-scale EKS clusters.
 
 ---
 
@@ -47,6 +47,6 @@ In large-scale Kubernetes clusters running hundreds of Pods, creating a dedicate
 - **Step 2**: Attach inline Session Policies when configuring Pod Identity Associations via AWS CLI/Console/CDK to restrict scopes per Kubernetes ServiceAccount.
 - **Step 3**: Audit access logs using AWS CloudWatch & CloudTrail to verify permissions.
 
-👉 **Facebook Post Link:** [View post on Facebook](https://www.facebook.com/share/p/14mL1ERofZM/)
+ **Facebook Post Link:** [View post on Facebook](https://www.facebook.com/share/p/14mL1ERofZM/)
 
 `#AWS` `#AmazonEKS` `#EKS` `#PodIdentity` `#Kubernetes` `#IAM` `#DevOps` `#CloudSecurity` `#AWSCommunity` `#TechSharing`

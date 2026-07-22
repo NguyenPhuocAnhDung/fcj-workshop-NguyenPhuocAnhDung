@@ -16,11 +16,11 @@ pre: " <b> 1.1. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 3   | - Create AWS Free Tier account<br>- Configure basic account security settings | 05/05/2026   | 05/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Learn major AWS service groups:<br>&emsp; + Compute (EC2)<br>&emsp; + Storage (S3, EBS)<br>&emsp; + Networking (VPC)<br>&emsp; + Database (RDS) | 06/05/2026   | 06/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Deploy EC2 instance:<br>&emsp; + Launch EC2 Instance<br>&emsp; + Connect via SSH from local machine | 07/05/2026   | 07/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Manage EBS storage:<br>&emsp; + Attach EBS Volume to EC2 instance<br>&emsp; + Format and mount volume | 08/05/2026   | 08/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 2   | - Cost management on AWS:<br>&emsp; + Create AWS Budgets for cost alerts<br>&emsp; + Monitor resource usage to remain within Free Tier limits | 11/05/2026   | 11/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Create AWS Free Tier account<br>- Configure basic account security settings | 05/05/2026 | 05/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Learn major AWS service groups:<br>&emsp; + Compute (EC2)<br>&emsp; + Storage (S3, EBS)<br>&emsp; + Networking (VPC)<br>&emsp; + Database (RDS) | 06/05/2026 | 06/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Deploy EC2 instance:<br>&emsp; + Launch EC2 Instance<br>&emsp; + Connect via SSH from local machine | 07/05/2026 | 07/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Manage EBS storage:<br>&emsp; + Attach EBS Volume to EC2 instance<br>&emsp; + Format and mount volume | 08/05/2026 | 08/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Cost management on AWS:<br>&emsp; + Create AWS Budgets for cost alerts<br>&emsp; + Monitor resource usage to remain within Free Tier limits | 11/05/2026 | 11/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 1 Achievements:

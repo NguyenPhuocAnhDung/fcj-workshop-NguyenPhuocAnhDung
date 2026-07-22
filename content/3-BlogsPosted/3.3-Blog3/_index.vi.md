@@ -21,14 +21,14 @@ Cách làm này cực kỳ trực quan và giúp người mới dễ hình dung.
 
 ### CÁC HẠN CHẾ CHẾT NGƯỜI CỦA "CLICK-OPS"
 
-1. **Thiếu tính tái lập (Lack of Reproducibility)**  
-   Giả sử bạn mất 3 ngày để click tạo xong một môi trường Development. Bây giờ Sếp yêu cầu dựng thêm một môi trường Staging và Production y hệt. Việc ngồi click lại hàng trăm bước thủ công không chỉ tốn thời gian mà còn chắc chắn xảy ra sai sót (Human Error).
+1. **Thiếu tính tái lập (Lack of Reproducibility)**
+ Giả sử bạn mất 3 ngày để click tạo xong một môi trường Development. Bây giờ Sếp yêu cầu dựng thêm một môi trường Staging và Production y hệt. Việc ngồi click lại hàng trăm bước thủ công không chỉ tốn thời gian mà còn chắc chắn xảy ra sai sót (Human Error).
 
-2. **Không thể quản lý phiên bản (No Version Control)**  
-   Một ngày đẹp trời, hệ thống bị lỗi kết nối Database. Ai đã chỉnh sửa Inbound Rule của Security Group? Sửa lúc nào? Giá trị cũ là gì? Với ClickOps, bạn hoàn toàn không có file `git diff` để biết ai đã thay đổi những gì trên hạ tầng.
+2. **Không thể quản lý phiên bản (No Version Control)**
+ Một ngày đẹp trời, hệ thống bị lỗi kết nối Database. Ai đã chỉnh sửa Inbound Rule của Security Group? Sửa lúc nào? Giá trị cũ là gì? Với ClickOps, bạn hoàn toàn không có file `git diff` để biết ai đã thay đổi những gì trên hạ tầng.
 
-3. **Khó khăn trong khôi phục thảm họa (Disaster Recovery)**  
-   Nếu một Region gặp sự cố hoặc tài nguyên bị xóa nhầm, việc dựng lại toàn bộ hạ tầng bằng tay trong thời gian ngắn để ứng dụng hoạt động trở lại gần như là điều không thể.
+3. **Khó khăn trong khôi phục thảm họa (Disaster Recovery)**
+ Nếu một Region gặp sự cố hoặc tài nguyên bị xóa nhầm, việc dựng lại toàn bộ hạ tầng bằng tay trong thời gian ngắn để ứng dụng hoạt động trở lại gần như là điều không thể.
 
 ---
 
@@ -53,6 +53,6 @@ Việc dịch chuyển từ "người click Console" sang "người viết code 
 
 Cảm ơn mọi người đã theo dõi bài viết! Bạn đang dùng công cụ IaC nào cho dự án AWS của mình? Hãy chia sẻ trải nghiệm ở bên dưới nhé!
 
-👉 **Link bài đăng trên Facebook:** [Xem bài viết trên Facebook](https://www.facebook.com/share/p/14mrD5o7RM2/)
+ **Link bài đăng trên Facebook:** [Xem bài viết trên Facebook](https://www.facebook.com/share/p/14mrD5o7RM2/)
 
 `#AWS` `#InfrastructureAsCode` `#Terraform` `#AWSCDK` `#DevOps` `#CloudComputing` `#AWSCloudFormation` `#AWSCommunity` `#TechSharing`

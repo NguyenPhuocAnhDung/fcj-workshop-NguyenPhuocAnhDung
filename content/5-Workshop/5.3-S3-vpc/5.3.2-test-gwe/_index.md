@@ -1,6 +1,6 @@
 ---
 title : "Test the Gateway Endpoint"
-date : 2024-01-01 
+date : 2024-01-01
 weight : 2
 chapter : false
 pre : " <b> 5.3.2 </b> "
@@ -21,7 +21,7 @@ pre : " <b> 5.3.2 </b> "
 + Leave other fields as they are (default)
 + Scroll down and choose **Create bucket**
 
-![Create](/images/5-Workshop/5.3-S3-vpc/create-button.png) 
+![Create](/images/5-Workshop/5.3-S3-vpc/create-button.png)
 
 + Successfully create S3 bucket.
 
@@ -29,7 +29,7 @@ pre : " <b> 5.3.2 </b> "
 
 #### Connect to EC2 with session manager
 
-+ For this workshop, you will use **AWS Session Manager** to access several **EC2 instances**. **Session Manager** is a fully managed **AWS Systems Manager** capability that allows you to manage your **Amazon EC2 instances**  and on-premises virtual machines (VMs) through an interactive one-click browser-based shell. Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys.
++ For this workshop, you will use **AWS Session Manager** to access several **EC2 instances**. **Session Manager** is a fully managed **AWS Systems Manager** capability that allows you to manage your **Amazon EC2 instances** and on-premises virtual machines (VMs) through an interactive one-click browser-based shell. Session Manager provides secure and auditable instance management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys.
 
 + First Cloud AI Journey [Lab](https://000058.awsstudygroup.com/1-introduce/) for indepth understanding of Session manager.
 
@@ -41,7 +41,7 @@ pre : " <b> 5.3.2 </b> "
 
 ![system manager](/images/5-Workshop/5.3-S3-vpc/sm1.png)
 
-3. Click **Start Session**, and select **the EC2 instance** named **Test-Gateway-Endpoint**. 
+3. Click **Start Session**, and select **the EC2 instance** named **Test-Gateway-Endpoint**.
 {{% notice info %}}
 This EC2 instance is already running in "VPC Cloud" and will be used to test connectivity to Amazon S3 through the Gateway endpoint you just created (s3-gwe). {{% /notice %}}
 
@@ -51,7 +51,7 @@ This EC2 instance is already running in "VPC Cloud" and will be used to test con
 
 ![Success](/images/5-Workshop/5.3-S3-vpc/start-session-success.png)
 
-You have successfully start a session - connect to the EC2 instance in VPC cloud. In the next step, we will create a S3 bucket and a file in it. 
+You have successfully start a session - connect to the EC2 instance in VPC cloud. In the next step, we will create a S3 bucket and a file in it.
 
 #### Create a file and upload to s3 bucket
 
@@ -71,7 +71,7 @@ You have successfully uploaded the file to your S3 bucket. You can now terminate
 
 #### Check object in S3 bucket
 
-1. Navigate to S3 console.  
+1. Navigate to S3 console.
 2. Click the name of your s3 bucket
 3. In the Bucket console, you will see the file you have uploaded to your S3 bucket
 

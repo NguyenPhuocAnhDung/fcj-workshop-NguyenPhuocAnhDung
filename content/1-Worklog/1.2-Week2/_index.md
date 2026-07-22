@@ -16,11 +16,11 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 3   | - Study AWS IAM theory:<br>&emsp; + Root account & Users<br>&emsp; + IAM Groups & Policies<br>&emsp; + IAM Roles | 12/05/2026   | 12/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Practice storage and backup solutions:<br>&emsp; + AWS Backup configuration for automated schedules<br>&emsp; + Learn AWS Storage Gateway concepts | 13/05/2026   | 13/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Deploy Static Website Hosting:<br>&emsp; + Configure S3 Bucket for Static Website hosting<br>&emsp; + Integrate CloudFront CDN for global distribution | 14/05/2026   | 14/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Practice S3 data management:<br>&emsp; + Enable S3 Versioning<br>&emsp; + Configure Cross-Region Replication<br>&emsp; + Test data backup & restore procedures | 15/05/2026   | 15/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 2   | - Optimize cloud resource management via Resource Groups | 18/05/2026   | 18/05/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Study AWS IAM theory:<br>&emsp; + Root account & Users<br>&emsp; + IAM Groups & Policies<br>&emsp; + IAM Roles | 12/05/2026 | 12/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Practice storage and backup solutions:<br>&emsp; + AWS Backup configuration for automated schedules<br>&emsp; + Learn AWS Storage Gateway concepts | 13/05/2026 | 13/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Deploy Static Website Hosting:<br>&emsp; + Configure S3 Bucket for Static Website hosting<br>&emsp; + Integrate CloudFront CDN for global distribution | 14/05/2026 | 14/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Practice S3 data management:<br>&emsp; + Enable S3 Versioning<br>&emsp; + Configure Cross-Region Replication<br>&emsp; + Test data backup & restore procedures | 15/05/2026 | 15/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Optimize cloud resource management via Resource Groups | 18/05/2026 | 18/05/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 2 Achievements:

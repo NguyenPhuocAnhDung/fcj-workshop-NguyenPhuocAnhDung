@@ -26,18 +26,18 @@ Giải pháp **Session Policies** cho phép bạn tái sử dụng một IAM Rol
 
 ### CÁC ĐIỂM KỸ THUẬT CỐT LÕI CẦN NẮM
 
-1. **Cơ chế Phân quyền Giao nhau (Intersection of Permissions)**  
-   Quyền hạn thực tế của Pod = **Giao (Intersection)** giữa IAM Role Policy và Session Policy.  
-   👉 *Lưu ý quan trọng*: Session Policy chỉ có thể **thu hẹp** (restrict) quyền chứ không bao giờ có thể mở rộng quyền vượt quá IAM Role gốc.
+1. **Cơ chế Phân quyền Giao nhau (Intersection of Permissions)**
+ Quyền hạn thực tế của Pod = **Giao (Intersection)** giữa IAM Role Policy và Session Policy.
+ *Lưu ý quan trọng*: Session Policy chỉ có thể **thu hẹp** (restrict) quyền chứ không bao giờ có thể mở rộng quyền vượt quá IAM Role gốc.
 
-2. **Tránh over-permissioning khi dùng chung IAM Role**  
-   Ví dụ: Nhiều Pods dịch vụ cùng dùng chung một IAM Role có quyền truy cập S3, nhưng nhờ Session Policy, Pod A chỉ có thể đọc dữ liệu từ `s3://bucket-a`, còn Pod B chỉ có thể ghi vào `s3://bucket-b`.
+2. **Tránh over-permissioning khi dùng chung IAM Role**
+ Ví dụ: Nhiều Pods dịch vụ cùng dùng chung một IAM Role có quyền truy cập S3, nhưng nhờ Session Policy, Pod A chỉ có thể đọc dữ liệu từ `s3://bucket-a`, còn Pod B chỉ có thể ghi vào `s3://bucket-b`.
 
-3. **Hỗ trợ Đa tài khoản (Cross-Account)**  
-   Hỗ trợ cấu hình phân quyền mượt mà giữa các tài khoản AWS khác nhau thông qua cơ chế IAM Role Chaining.
+3. **Hỗ trợ Đa tài khoản (Cross-Account)**
+ Hỗ trợ cấu hình phân quyền mượt mà giữa các tài khoản AWS khác nhau thông qua cơ chế IAM Role Chaining.
 
-4. **Giảm tải quản trị & Tránh chạm Quota IAM**  
-   Giúp đội ngũ DevOps giảm tới 70% số lượng IAM Roles cần khởi tạo và bảo trì trong cụm EKS Cluster lớn.
+4. **Giảm tải quản trị & Tránh chạm Quota IAM**
+ Giúp đội ngũ DevOps giảm tới 70% số lượng IAM Roles cần khởi tạo và bảo trì trong cụm EKS Cluster lớn.
 
 ---
 
@@ -49,6 +49,6 @@ Giải pháp **Session Policies** cho phép bạn tái sử dụng một IAM Rol
 
 Cảm ơn mọi người đã theo dõi bài viết! Cụm EKS của bạn đang dùng cơ chế phân quyền IAM nào? Hãy chia sẻ trải nghiệm ở bên dưới nhé!
 
-👉 **Link bài đăng trên Facebook:** [Xem bài viết trên Facebook](https://www.facebook.com/share/p/14mL1ERofZM/)
+ **Link bài đăng trên Facebook:** [Xem bài viết trên Facebook](https://www.facebook.com/share/p/14mL1ERofZM/)
 
 `#AWS` `#AmazonEKS` `#EKS` `#PodIdentity` `#Kubernetes` `#IAM` `#DevOps` `#CloudSecurity` `#AWSCommunity` `#TechSharing`

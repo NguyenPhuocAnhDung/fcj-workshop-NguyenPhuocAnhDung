@@ -16,11 +16,11 @@ pre: " <b> 1.11. </b> "
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | --- | --- | --- | --- |
-| 3   | - Tìm hiểu kiến trúc hướng sự kiện (Event-Driven):<br>&emsp; + Amazon SQS (Simple Queue Service) - hàng đợi tin nhắn<br>&emsp; + Amazon SNS (Simple Notification Service) - thông báo<br>&emsp; + Kết hợp SQS + SNS + Lambda Fan-out pattern | 14/07/2026   | 14/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Thực hành Amazon SQS và SNS:<br>&emsp; + Tạo Standard Queue và FIFO Queue<br>&emsp; + Cấu hình Dead Letter Queue (DLQ)<br>&emsp; + Tạo SNS Topic và Subscription | 15/07/2026   | 15/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Nghiên cứu giám sát ứng dụng với CloudWatch:<br>&emsp; + CloudWatch Metrics, Logs và Alarms<br>&emsp; + Tạo Custom Metrics từ ứng dụng<br>&emsp; + Cấu hình CloudWatch Dashboard | 16/07/2026   | 16/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Thực hành AWS X-Ray (Distributed Tracing):<br>&emsp; + Kích hoạt X-Ray tracing cho Lambda và API Gateway<br>&emsp; + Phân tích Service Map và Trace details | 17/07/2026   | 17/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 2   | - Tổng hợp giải pháp Observability cho hệ thống Serverless:<br>&emsp; + Kết hợp CloudWatch + X-Ray + SNS Alerts<br>&emsp; + Thiết kế chiến lược giám sát toàn diện | 20/07/2026   | 20/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tìm hiểu kiến trúc hướng sự kiện (Event-Driven):<br>&emsp; + Amazon SQS (Simple Queue Service) - hàng đợi tin nhắn<br>&emsp; + Amazon SNS (Simple Notification Service) - thông báo<br>&emsp; + Kết hợp SQS + SNS + Lambda Fan-out pattern | 14/07/2026 | 14/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Thực hành Amazon SQS và SNS:<br>&emsp; + Tạo Standard Queue và FIFO Queue<br>&emsp; + Cấu hình Dead Letter Queue (DLQ)<br>&emsp; + Tạo SNS Topic và Subscription | 15/07/2026 | 15/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Nghiên cứu giám sát ứng dụng với CloudWatch:<br>&emsp; + CloudWatch Metrics, Logs và Alarms<br>&emsp; + Tạo Custom Metrics từ ứng dụng<br>&emsp; + Cấu hình CloudWatch Dashboard | 16/07/2026 | 16/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Thực hành AWS X-Ray (Distributed Tracing):<br>&emsp; + Kích hoạt X-Ray tracing cho Lambda và API Gateway<br>&emsp; + Phân tích Service Map và Trace details | 17/07/2026 | 17/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Tổng hợp giải pháp Observability cho hệ thống Serverless:<br>&emsp; + Kết hợp CloudWatch + X-Ray + SNS Alerts<br>&emsp; + Thiết kế chiến lược giám sát toàn diện | 20/07/2026 | 20/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 11:

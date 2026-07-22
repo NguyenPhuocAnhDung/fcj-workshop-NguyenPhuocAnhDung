@@ -43,20 +43,20 @@ The default policy allows access to all S3 Buckets through the VPC endpoint.
 
 ```
 {
-  "Id": "Policy1631305502445",
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "Stmt1631305501021",
-      "Action": "s3:*",
-      "Effect": "Allow",
-      "Resource": [
-      				"arn:aws:s3:::yourbucketname-2",
-       				"arn:aws:s3:::yourbucketname-2/*"
-       ],
-      "Principal": "*"
-    }
-  ]
+ "Id": "Policy1631305502445",
+ "Version": "2012-10-17",
+ "Statement": [
+ {
+ "Sid": "Stmt1631305501021",
+ "Action": "s3:*",
+ "Effect": "Allow",
+ "Resource": [
+ 				"arn:aws:s3:::yourbucketname-2",
+ 				"arn:aws:s3:::yourbucketname-2/*"
+ ],
+ "Principal": "*"
+ }
+ ]
 }
 ```
 

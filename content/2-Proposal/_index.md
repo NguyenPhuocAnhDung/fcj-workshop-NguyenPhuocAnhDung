@@ -39,18 +39,18 @@ The solution leverages **Microservices Architecture** combined with **AWS Cloud 
 The architecture follows an **Event-Driven Microservices** pattern hosted on AWS Cloud:
 
 ```
-[Mobile App (Flutter)] 
-       │ (HTTPS / SignalR)
-       ▼
+[Mobile App (Flutter)]
+ │ (HTTPS / SignalR)
+ ▼
 [AWS API Gateway / YARP Router]
-       │
+ │
  ┌─────┼──────────────┬──────────────┬──────────────┬──────────────┐
- ▼     ▼              ▼              ▼              ▼              ▼
-[User] [TrafficSign]  [Voting]       [Payment]      [Notification] [Feedback]
-(RDS)  (S3 / Lambda)  (RDS)          (RDS)          (SignalR Hub)  (RDS)
-       └──────┬───────┘
-              ▼
-   [Amazon SageMaker / YOLO] ──► [Amazon ElastiCache Redis]
+ ▼ ▼ ▼ ▼ ▼ ▼
+[User] [TrafficSign] [Voting] [Payment] [Notification] [Feedback]
+(RDS) (S3 / Lambda) (RDS) (RDS) (SignalR Hub) (RDS)
+ └──────┬───────┘
+ ▼
+ [Amazon SageMaker / YOLO] ──► [Amazon ElastiCache Redis]
 ```
 
 #### Core AWS Services Used:
@@ -85,16 +85,16 @@ The architecture follows an **Event-Driven Microservices** pattern hosted on AWS
 ### 5. Implementation Roadmap & Milestones
 
 - **Phase 1: Architecture & AI Research (Month 1)**
-  - Requirements analysis, Microservices schema design, and dataset annotation.
-  - Train baseline YOLO model for traffic sign detection.
+ - Requirements analysis, Microservices schema design, and dataset annotation.
+ - Train baseline YOLO model for traffic sign detection.
 - **Phase 2: Microservices & Mobile App Development (Month 2)**
-  - Develop .NET 8 Web API microservices and Flutter mobile client.
-  - Integrate S3, Lambda, SageMaker inference, and API Gateway.
+ - Develop .NET 8 Web API microservices and Flutter mobile client.
+ - Integrate S3, Lambda, SageMaker inference, and API Gateway.
 - **Phase 3: IaC Automation with AWS CDK & CI/CD (Month 3)**
-  - Write AWS CDK (TypeScript) scripts for automated cloud provisioning.
-  - Setup CI/CD pipelines (GitHub Actions / AWS CodePipeline) for container deployment to ECS Fargate.
+ - Write AWS CDK (TypeScript) scripts for automated cloud provisioning.
+ - Setup CI/CD pipelines (GitHub Actions / AWS CodePipeline) for container deployment to ECS Fargate.
 - **Phase 4: Load Testing, Optimization & Operations (Month 4)**
-  - Execute stress testing, optimize ElastiCache Redis, and perform Security Hub audit.
+ - Execute stress testing, optimize ElastiCache Redis, and perform Security Hub audit.
 
 ---
 
@@ -114,12 +114,12 @@ Estimated monthly cost based on **AWS Pricing Calculator** for 10,000 daily acti
 
 ### 7. Risk Evaluation & Mitigation Strategy
 
-- **Risk 1: High AI processing workload causing API lag**  
-  *Mitigation*: Use S3 Presigned URLs for direct mobile uploads, coupled with AWS Lambda async processing via SQS queues.
-- **Risk 2: Spam or inaccurate user submissions**  
-  *Mitigation*: Implement reputation-weighted voting algorithms in VotingService.
-- **Risk 3: Cloud budget overruns**  
-  *Mitigation*: Configure AWS Budgets alerts to trigger notifications at 80% threshold.
+- **Risk 1: High AI processing workload causing API lag**
+ *Mitigation*: Use S3 Presigned URLs for direct mobile uploads, coupled with AWS Lambda async processing via SQS queues.
+- **Risk 2: Spam or inaccurate user submissions**
+ *Mitigation*: Implement reputation-weighted voting algorithms in VotingService.
+- **Risk 3: Cloud budget overruns**
+ *Mitigation*: Configure AWS Budgets alerts to trigger notifications at 80% threshold.
 
 ---
 

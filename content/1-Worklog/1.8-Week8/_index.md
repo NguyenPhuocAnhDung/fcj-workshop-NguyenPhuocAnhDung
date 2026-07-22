@@ -16,11 +16,11 @@ pre: " <b> 1.8. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 3   | - Learn AWS Serverless architecture:<br>&emsp; + AWS Lambda (Function as a Service)<br>&emsp; + Amazon API Gateway (REST/HTTP API)<br>&emsp; + Lambda + API Gateway + DynamoDB integration | 23/06/2026   | 23/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Build CI/CD Pipeline:<br>&emsp; + AWS SAM (Serverless Application Model)<br>&emsp; + AWS CodePipeline for automated deployment<br>&emsp; + CodeBuild for automated build and test | 24/06/2026   | 24/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Deploy and test Serverless API:<br>&emsp; + Deploy API to API Gateway<br>&emsp; + Test endpoints with Postman<br>&emsp; + Handle CORS and Authentication | 25/06/2026   | 25/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Connect Frontend to Serverless Backend:<br>&emsp; + Integrate web interface with API calls<br>&emsp; + Handle Authentication with Cognito | 26/06/2026   | 26/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 2   | - DevOps practice with CodeCommit, CodeBuild, CodeDeploy and CodePipeline:<br>&emsp; + Automate application deployment to EC2<br>&emsp; + Practice Continuous Delivery | 29/06/2026   | 29/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn AWS Serverless architecture:<br>&emsp; + AWS Lambda (Function as a Service)<br>&emsp; + Amazon API Gateway (REST/HTTP API)<br>&emsp; + Lambda + API Gateway + DynamoDB integration | 23/06/2026 | 23/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Build CI/CD Pipeline:<br>&emsp; + AWS SAM (Serverless Application Model)<br>&emsp; + AWS CodePipeline for automated deployment<br>&emsp; + CodeBuild for automated build and test | 24/06/2026 | 24/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Deploy and test Serverless API:<br>&emsp; + Deploy API to API Gateway<br>&emsp; + Test endpoints with Postman<br>&emsp; + Handle CORS and Authentication | 25/06/2026 | 25/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Connect Frontend to Serverless Backend:<br>&emsp; + Integrate web interface with API calls<br>&emsp; + Handle Authentication with Cognito | 26/06/2026 | 26/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - DevOps practice with CodeCommit, CodeBuild, CodeDeploy and CodePipeline:<br>&emsp; + Automate application deployment to EC2<br>&emsp; + Practice Continuous Delivery | 29/06/2026 | 29/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 8 Achievements:

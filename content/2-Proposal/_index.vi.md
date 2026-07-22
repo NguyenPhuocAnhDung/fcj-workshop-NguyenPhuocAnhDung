@@ -39,18 +39,18 @@ Giải pháp tận dụng kiến trúc **Microservices** kết hợp **AWS Cloud
 Hệ thống được thiết kế theo mô hình **Microservices Event-Driven** trên đám mây AWS:
 
 ```
-[Mobile App (Flutter)] 
-       │ (HTTPS / SignalR)
-       ▼
+[Mobile App (Flutter)]
+ │ (HTTPS / SignalR)
+ ▼
 [AWS API Gateway / YARP Router]
-       │
+ │
  ┌─────┼──────────────┬──────────────┬──────────────┬──────────────┐
- ▼     ▼              ▼              ▼              ▼              ▼
-[User] [TrafficSign]  [Voting]       [Payment]      [Notification] [Feedback]
-(RDS)  (S3 / Lambda)  (RDS)          (RDS)          (SignalR Hub)  (RDS)
-       └──────┬───────┘
-              ▼
-   [Amazon SageMaker / YOLO] ──► [Amazon ElastiCache Redis]
+ ▼ ▼ ▼ ▼ ▼ ▼
+[User] [TrafficSign] [Voting] [Payment] [Notification] [Feedback]
+(RDS) (S3 / Lambda) (RDS) (RDS) (SignalR Hub) (RDS)
+ └──────┬───────┘
+ ▼
+ [Amazon SageMaker / YOLO] ──► [Amazon ElastiCache Redis]
 ```
 
 #### Các Dịch vụ AWS Cốt lõi Sử dụng:
@@ -85,16 +85,16 @@ Hệ thống được thiết kế theo mô hình **Microservices Event-Driven**
 ### 5. Lộ trình Triển khai & Các Mốc chính (Roadmap & Milestones)
 
 - **Giai đoạn 1: Nghiên cứu & Thiết kế Kiến trúc (Tháng 1)**
-  - Phân tích yêu cầu hệ thống, vẽ sơ đồ kiến trúc Microservices và thiết kế cơ sở dữ liệu.
-  - Xây dựng mô hình AI YOLO nhận diện biển báo giao thông Việt Nam.
+ - Phân tích yêu cầu hệ thống, vẽ sơ đồ kiến trúc Microservices và thiết kế cơ sở dữ liệu.
+ - Xây dựng mô hình AI YOLO nhận diện biển báo giao thông Việt Nam.
 - **Giai đoạn 2: Lập trình Microservices & Mobile App (Tháng 2)**
-  - Lập trình các dịch vụ Backend bằng .NET 8 Web API và Mobile App bằng Flutter.
-  - Tích hợp AWS S3, Lambda, Rekognition/SageMaker và API Gateway.
+ - Lập trình các dịch vụ Backend bằng .NET 8 Web API và Mobile App bằng Flutter.
+ - Tích hợp AWS S3, Lambda, Rekognition/SageMaker và API Gateway.
 - **Giai đoạn 3: Tự động hóa Hạ tầng bằng AWS CDK & CI/CD (Tháng 3)**
-  - Viết kịch bản AWS CDK (TypeScript) để khởi tạo toàn bộ hạ tầng AWS.
-  - Xây dựng CI/CD Pipeline (GitHub Actions / AWS CodePipeline) tự động test và deploy lên ECS Fargate.
+ - Viết kịch bản AWS CDK (TypeScript) để khởi tạo toàn bộ hạ tầng AWS.
+ - Xây dựng CI/CD Pipeline (GitHub Actions / AWS CodePipeline) tự động test và deploy lên ECS Fargate.
 - **Giai đoạn 4: Kiểm thử, Tối ưu & Đưa vào Vận hành (Tháng 4)**
-  - Kiểm thử tải (Load Testing), tối ưu bộ nhớ đệm ElastiCache Redis và đánh giá bảo mật Security Hub.
+ - Kiểm thử tải (Load Testing), tối ưu bộ nhớ đệm ElastiCache Redis và đánh giá bảo mật Security Hub.
 
 ---
 
@@ -114,12 +114,12 @@ Dựa trên công cụ **AWS Pricing Calculator** cho hệ thống quy mô 10.00
 
 ### 7. Đánh giá Rủi ro & Chiến lược Giảm thiểu (Risk Matrix & Mitigation)
 
-- **Rủi ro 1: Tải xử lý ảnh AI tăng đột biến gây trễ hệ thống**  
-  *Giảm thiểu*: Sử dụng AWS S3 Presigned URL để upload trực tiếp từ Mobile, kết hợp AWS Lambda xử lý bất đồng bộ qua hàng đợi Amazon SQS.
-- **Rủi ro 2: Dữ liệu đóng góp sai lệch từ người dùng**  
-  *Giảm thiểu*: Áp dụng thuật toán tính trọng số bình chọn (Voting Weight) dựa trên uy tín tài khoản trong VotingService.
-- **Rủi ro 3: Vượt ngân sách Đám mây**  
-  *Giảm thiểu*: Thiết lập AWS Budgets gửi cảnh báo qua Email/SMS khi chi phí chạm 80% hạn mức.
+- **Rủi ro 1: Tải xử lý ảnh AI tăng đột biến gây trễ hệ thống**
+ *Giảm thiểu*: Sử dụng AWS S3 Presigned URL để upload trực tiếp từ Mobile, kết hợp AWS Lambda xử lý bất đồng bộ qua hàng đợi Amazon SQS.
+- **Rủi ro 2: Dữ liệu đóng góp sai lệch từ người dùng**
+ *Giảm thiểu*: Áp dụng thuật toán tính trọng số bình chọn (Voting Weight) dựa trên uy tín tài khoản trong VotingService.
+- **Rủi ro 3: Vượt ngân sách Đám mây**
+ *Giảm thiểu*: Thiết lập AWS Budgets gửi cảnh báo qua Email/SMS khi chi phí chạm 80% hạn mức.
 
 ---
 

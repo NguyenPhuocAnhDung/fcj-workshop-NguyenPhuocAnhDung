@@ -6,17 +6,17 @@ chapter : false
 pre : " <b> 5.4.2 </b> "
 ---
 
-Trong phần này, bạn sẽ tạo và kiểm tra Interface Endpoint  S3 bằng cách sử dụng môi trường truyền thống mô phỏng.
+Trong phần này, bạn sẽ tạo và kiểm tra Interface Endpoint S3 bằng cách sử dụng môi trường truyền thống mô phỏng.
 
 1. Quay lại Amazon VPC menu. Trong thanh điều hướng bên trái, chọn Endpoints, sau đó click Create Endpoint.
 
 2. Trong Create endpoint console:
 + Đặt tên interface endpoint
-+ Trong Service category, chọn **aws services** 
++ Trong Service category, chọn **aws services**
 
 ![name](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint1.png)
 
-3.  Trong Search box, gõ S3 và nhấn Enter. Chọn endpoint có tên com.amazonaws.us-east-1.s3. Đảm bảo rằng cột Type có giá trị Interface.
+3. Trong Search box, gõ S3 và nhấn Enter. Chọn endpoint có tên com.amazonaws.us-east-1.s3. Đảm bảo rằng cột Type có giá trị Interface.
 
 ![service](/images/5-Workshop/5.4-S3-onprem/s3-interface-endpoint2.png)
 

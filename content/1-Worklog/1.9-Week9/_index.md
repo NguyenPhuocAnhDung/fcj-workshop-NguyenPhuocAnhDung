@@ -16,11 +16,11 @@ pre: " <b> 1.9. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 3   | - Learn Infrastructure as Code (IaC) and AWS CDK:<br>&emsp; + IaC concepts and benefits<br>&emsp; + Install AWS CDK CLI with TypeScript<br>&emsp; + CDK App, Stack, Construct overview | 30/06/2026   | 30/06/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Practice creating basic CDK Stack:<br>&emsp; + Create S3 Bucket, Lambda Function with CDK<br>&emsp; + Deploy (cdk deploy) and verify results | 01/07/2026   | 01/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Build advanced CDK Stack:<br>&emsp; + Define VPC, Security Group, EC2 with CDK<br>&emsp; + Integrate DynamoDB and API Gateway in CDK | 02/07/2026   | 02/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - Research advanced Serverless architecture:<br>&emsp; + Event-driven with SNS, SQS, EventBridge<br>&emsp; + Error handling and retry in Lambda | 03/07/2026   | 03/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
-| 2   | - Summarize documentation and CDK deployment procedures | 06/07/2026   | 06/07/2026      | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn Infrastructure as Code (IaC) and AWS CDK:<br>&emsp; + IaC concepts and benefits<br>&emsp; + Install AWS CDK CLI with TypeScript<br>&emsp; + CDK App, Stack, Construct overview | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Practice creating basic CDK Stack:<br>&emsp; + Create S3 Bucket, Lambda Function with CDK<br>&emsp; + Deploy (cdk deploy) and verify results | 01/07/2026 | 01/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 5 | - Build advanced CDK Stack:<br>&emsp; + Define VPC, Security Group, EC2 with CDK<br>&emsp; + Integrate DynamoDB and API Gateway in CDK | 02/07/2026 | 02/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 6 | - Research advanced Serverless architecture:<br>&emsp; + Event-driven with SNS, SQS, EventBridge<br>&emsp; + Error handling and retry in Lambda | 03/07/2026 | 03/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Summarize documentation and CDK deployment procedures | 06/07/2026 | 06/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 9 Achievements:

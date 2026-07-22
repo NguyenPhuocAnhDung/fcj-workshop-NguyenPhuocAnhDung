@@ -21,14 +21,14 @@ This approach is highly intuitive and helps beginners visualize concepts. Howeve
 
 ### CRITICAL DRAWBACKS OF "CLICK-OPS"
 
-1. **Lack of Reproducibility**  
-   Suppose it takes you 3 days to manually click and set up a Development environment. Now your Lead asks for identical Staging and Production environments. Re-clicking hundreds of steps is not only time-consuming but guaranteed to introduce human errors.
+1. **Lack of Reproducibility**
+ Suppose it takes you 3 days to manually click and set up a Development environment. Now your Lead asks for identical Staging and Production environments. Re-clicking hundreds of steps is not only time-consuming but guaranteed to introduce human errors.
 
-2. **No Version Control**  
-   One day, the Database connection fails. Who edited the Security Group Inbound Rule? When? What was the old value? With ClickOps, you have no `git diff` to inspect changes.
+2. **No Version Control**
+ One day, the Database connection fails. Who edited the Security Group Inbound Rule? When? What was the old value? With ClickOps, you have no `git diff` to inspect changes.
 
-3. **Disaster Recovery Challenges**  
-   If a Region experiences downtime or resources are accidentally deleted, manually rebuilding the entire infrastructure in a short timeframe is nearly impossible.
+3. **Disaster Recovery Challenges**
+ If a Region experiences downtime or resources are accidentally deleted, manually rebuilding the entire infrastructure in a short timeframe is nearly impossible.
 
 ---
 
@@ -51,6 +51,6 @@ Infrastructure as Code (IaC) is the practice of managing and provisioning entire
 
 Transitioning from a "Console clicker" to a "Code-driven Infrastructure engineer" is the single biggest milestone in becoming a professional Cloud / DevOps Engineer.
 
-👉 **Facebook Post Link:** [View post on Facebook](https://www.facebook.com/share/p/14mrD5o7RM2/)
+ **Facebook Post Link:** [View post on Facebook](https://www.facebook.com/share/p/14mrD5o7RM2/)
 
 `#AWS` `#InfrastructureAsCode` `#Terraform` `#AWSCDK` `#DevOps` `#CloudComputing` `#AWSCloudFormation` `#AWSCommunity` `#TechSharing`
