@@ -6,14 +6,22 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-Below is the list of tech blogs published on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) and tech channels:
+Below is the complete list of technical blog posts from the **[AWS DevOps Series]** published on [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj) and social channels:
 
-### [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Introduces Amazon EKS Pod Identity session policies for narrowing IAM permissions per Pod flexibly according to Least Privilege in Kubernetes.
+---
 
-### [Blog 2 - COST OPTIMIZATION AND SECURITY ON AWS](3.2-Blog2/)
-Explores cost optimization strategies combined with multi-layer security configurations on AWS Cloud.
+### 1. [Blog 1 - [AWS DevOps #1] Session Policies in Amazon EKS Pod Identity](3.1-Blog1/)
+Deep dive into **Session Policies** in Amazon EKS Pod Identity, guiding how to narrow IAM permissions per Kubernetes Pod according to **Least Privilege** without creating excessive IAM Roles.  
+👉 **Facebook Post Link:** [https://www.facebook.com/share/p/14mL1ERofZM/](https://www.facebook.com/share/p/14mL1ERofZM/)
 
-### [Blog 3 - [AWS DevOps #3] From "ClickOps" to Infrastructure as Code (IaC)](3.3-Blog3/)
-Analyzes why real-world Cloud engineering must say NO to manual clicking (ClickOps), highlighting critical drawbacks and IaC automation solutions (Terraform, AWS CDK, CloudFormation).  
-👉 **Post Link:** [Facebook Post](https://www.facebook.com/share/p/14mrD5o7RM2/)
+---
+
+### 2. [Blog 2 - [AWS DevOps #2] Best Practices for Cost Optimization & Multi-Layer Security on AWS](3.2-Blog2/)
+Battle-tested enterprise strategies for balancing **Cloud Cost Optimization** (Auto Scaling, Spot Instances, S3 Lifecycle) and **Multi-Layer Security (Defense in Depth)** (AWS WAF, Permission Boundaries, KMS, GuardDuty, Security Hub).  
+👉 **Facebook Post Link:** [https://www.facebook.com/share/p/19MaWGhgGr/](https://www.facebook.com/share/p/19MaWGhgGr/)
+
+---
+
+### 3. [Blog 3 - [AWS DevOps #3] From "ClickOps" to Infrastructure as Code (IaC)](3.3-Blog3/)
+Analyzes why real-world Cloud engineering must say NO to manual clicking (ClickOps), highlighting 3 critical drawbacks and IaC automation solutions (**Terraform, AWS CDK, CloudFormation**).  
+👉 **Facebook Post Link:** [https://www.facebook.com/share/p/14mrD5o7RM2/](https://www.facebook.com/share/p/14mrD5o7RM2/)
