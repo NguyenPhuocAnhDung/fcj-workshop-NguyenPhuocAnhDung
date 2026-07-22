@@ -19,9 +19,12 @@ Trong workshop này, bạn sẽ tìm hiểu và triển khai mô hình kiến tr
 + **"Microservices Cluster"**: 7 dịch vụ backend .NET Core và 1 tác vụ Python Data Scraper chạy trên cụm Serverless **AWS ECS Fargate**, giao tiếp nội bộ thông qua **AWS Cloud Map DNS**.
 + **"Database Layer"**: Lưu trữ dữ liệu tập trung hơn 1,286+ biển báo giao thông chuẩn GIS `geography` trên **AWS RDS for SQL Server**.
 
-![kientrucAWS](/images/5-Workshop/5.1-Workshop-overview/kientrucAWS.jpg)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/kientrucAWS.jpg" alt="Sơ đồ Kiến trúc AWS TSL-SignMap" style="border-radius: 8px; width: 100%; max-width: 900px; display: block; margin: 15px auto;">
+</p>
 
 **Tải tệp sơ đồ kiến trúc Draw.io:**  
-📥 **[BẤM VÀO ĐÂY ĐỂ TẢI TỆP TSL-SIGNMAP.AWS (DRAW.IO DIAGRAM)](/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio)**  
-*(Tệp dự phòng: [Tải tệp tsl-signmap.aws.drawio](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio))*
+📥 <a href="https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio" download="tsl-signmap.aws.drawio" target="_blank" style="font-weight: bold; color: #0066cc;">BẤM VÀO ĐÂY ĐỂ TẢI TỆP TSL-SIGNMAP.AWS (DRAW.IO DIAGRAM)</a>  
+*(Lưu ý: Bạn cũng có thể **nhấp chuột phải vào link phía trên -> chọn "Lưu liên kết thành..." (Save link as...)** để tải tệp `.drawio` về máy).*
+
 
