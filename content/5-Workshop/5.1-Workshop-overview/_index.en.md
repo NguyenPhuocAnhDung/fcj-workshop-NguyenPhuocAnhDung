@@ -6,13 +6,21 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### VPC endpoints
-+ **VPC endpoints** are virtual devices. They are horizontally scaled, redundant, and highly available VPC components. They allow communication between your compute resources and AWS services without imposing availability risks.
-+ Compute resources running in VPC can access **Amazon S3** using a Gateway endpoint. PrivateLink interface endpoints can be used by compute resources running in VPC or on-premises.
+#### Introduction to TSL-SignMap & AWS Architecture
+
++ **TSL-SignMap** (Project FCJ-Workshop-TrungTuan1) is a real-time traffic sign management & monitoring system for Vietnam, integrating an automated TSL Coin reward mechanism for user contributions.
++ The system is built on a modern **Microservices architecture** consisting of 11 core services and technical components deployed on **AWS Cloud** infrastructure (including Amazon S3, CloudFront CDN, Application Load Balancer, ECS Fargate, AWS Cloud Map, RDS for SQL Server, EventBridge, and Secrets Manager).
 
 #### Workshop overview
-In this workshop, you will use two VPCs.
-+ **"VPC Cloud"** is for cloud resources such as a **Gateway endpoint** and an EC2 instance to test with.
-+ **"VPC On-Prem"** simulates an on-premises environment such as a factory or corporate datacenter. An EC2 instance running strongSwan VPN software has been deployed in "VPC On-prem" and automatically configured to establish a Site-to-Site VPN tunnel with AWS Transit Gateway. This VPN simulates connectivity from an on-premises location to the AWS cloud. To minimize costs, only one VPN instance is provisioned to support this workshop. When planning VPN connectivity for your production workloads, AWS recommends using multiple VPN devices for high availability.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+In this workshop, you will explore and implement the end-to-end AWS cloud infrastructure for **TSL-SignMap**:
++ **"Frontend & CDN Layer"**: The React + Vite interface (`ADMIN.WEB`) hosted on **Amazon S3** and distributed via **AWS CloudFront CDN** for low latency.
++ **"API Gateway & Load Balancing"**: Traffic from users routes through **Application Load Balancer (ALB)** to the **Ocelot API Gateway Router** running in **AWS ECS Fargate**.
++ **"Microservices Cluster"**: 7 backend .NET Core services and 1 Python Data Scraper task running on serverless **AWS ECS Fargate**, communicating internally via **AWS Cloud Map DNS**.
++ **"Database Layer"**: Centralized storage of 1,286+ traffic signs with spatial `geography` data on **AWS RDS for SQL Server**.
+
+![kientrucAWS](/images/5-Workshop/5.1-Workshop-overview/kientrucAWS.jpg)
+
+**Download Draw.io Architecture Diagram:**  
+📥 **[CLICK HERE TO DOWNLOAD TSL-SIGNMAP.AWS FILE (DRAW.IO DIAGRAM)](/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio)**  
+*(Alternative download: [Download tsl-signmap.aws.drawio](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio))*

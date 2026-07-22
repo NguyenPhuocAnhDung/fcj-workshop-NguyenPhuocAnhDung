@@ -6,14 +6,22 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Giới thiệu về TSL-SignMap & Kiến trúc AWS
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
++ Hệ thống **TSL-SignMap** (Dự án FCJ-Workshop-TrungTuan1) là giải pháp quản lý & giám sát biển báo giao thông thời gian thực trên toàn quốc tích hợp cơ chế phần thưởng TSL Coin tự động khi người dùng đóng góp biển báo mới.
++ Hệ thống được xây dựng theo kiến trúc **Microservices** hiện đại bao gồm 11 dịch vụ & thành phần kỹ thuật triển khai trên hạ tầng đám mây **AWS Cloud** (như Amazon S3, CloudFront CDN, Application Load Balancer, ECS Fargate, AWS Cloud Map, RDS for SQL Server, EventBridge và Secrets Manager).
 
 #### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Trong workshop này, bạn sẽ tìm hiểu và triển khai mô hình kiến trúc hạ tầng AWS hoàn chỉnh cho hệ thống **TSL-SignMap**:
++ **"Frontend & CDN Layer"**: Giao diện React + Vite (`ADMIN.WEB`) được lưu trữ tại **Amazon S3** và phân phối qua **AWS CloudFront CDN** giúp nạp trang siêu tốc.
++ **"API Gateway & Load Balancing"**: Traffic từ người dùng qua **Application Load Balancer (ALB)** điều hướng đến **Ocelot API Gateway Router** chạy trong **AWS ECS Fargate**.
++ **"Microservices Cluster"**: 7 dịch vụ backend .NET Core và 1 tác vụ Python Data Scraper chạy trên cụm Serverless **AWS ECS Fargate**, giao tiếp nội bộ thông qua **AWS Cloud Map DNS**.
++ **"Database Layer"**: Lưu trữ dữ liệu tập trung hơn 1,286+ biển báo giao thông chuẩn GIS `geography` trên **AWS RDS for SQL Server**.
+
+![kientrucAWS](/images/5-Workshop/5.1-Workshop-overview/kientrucAWS.jpg)
+
+**Tải tệp sơ đồ kiến trúc Draw.io:**  
+📥 **[BẤM VÀO ĐÂY ĐỂ TẢI TỆP TSL-SIGNMAP.AWS (DRAW.IO DIAGRAM)](/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio)**  
+*(Tệp dự phòng: [Tải tệp tsl-signmap.aws.drawio](https://raw.githubusercontent.com/NguyenPhuocAnhDung/fcj-workshop-NguyenPhuocAnhDung/main/static/images/5-Workshop/5.1-Workshop-overview/tsl-signmap.aws.drawio))*
+
