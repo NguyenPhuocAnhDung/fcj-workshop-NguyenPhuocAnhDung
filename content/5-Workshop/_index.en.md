@@ -1,27 +1,26 @@
 ---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-07-22
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-# Secure Hybrid Access to S3 using VPC Endpoints
+# Deploying TSL-SignMap Microservices on AWS Cloud
 
-#### Overview
+#### Overview of Project FCJ-Workshop-TrungTuan1
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop provides a step-by-step guide to deploying **TSL-SignMap** - Vietnam Traffic Sign Management & Real-time Monitoring System using **Microservices architecture** on **AWS Cloud** infrastructure.
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+The system consists of **11 core services & technical components** running on official AWS Cloud services:
++ **Frontend React Web (`ADMIN.WEB`)**: Deployed on **Amazon S3** and distributed via **AWS CloudFront CDN**.
++ **API Gateway & 7 Microservices .NET Core + Python Scraper**: Packaged in Docker Containers running serverless on **AWS ECS Fargate**, routed via **Application Load Balancer (ALB)** and **AWS Cloud Map DNS**.
++ **Database Layer**: **AWS RDS for SQL Server 2022** storing 1,286+ spatial `geography` traffic signs.
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+#### Lab Modules
 
-#### Content
-
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+1. [Introduction & TSL-SignMap Architecture](5.1-Workshop-overview/)
+2. [Prerequisites & IAM Permissions](5.2-Prerequiste/)
+3. [Deploying Frontend Web App on S3 & CloudFront CDN](5.3-S3-vpc/)
+4. [Deploying Microservices Cluster on ECS Fargate & RDS](5.4-S3-onprem/)
+5. [Security Configuration, Secrets Manager & IAM Policies](5.5-Policy/)
+6. [Cleaning up AWS Resources](5.6-Cleanup/)
